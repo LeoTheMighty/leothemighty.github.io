@@ -1,4 +1,4 @@
 # Leonid Belyi
 #### ~ Software Engineer ~
 
-[https://leothemighty.github.io/home](Here's my React App Website!)
+[Here's my React App Website!](https://leothemighty.github.io/home)
