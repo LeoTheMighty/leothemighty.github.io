@@ -2,7 +2,7 @@
   "name": "leothemighty.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://leothemighty.github.io/home",
+  "homepage": "https://leothemighty.github.io",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "lodash": "^4.17.11",
