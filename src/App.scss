@@ -1,3 +1,17 @@
+body {
+  margin: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif,
+    monospace;
+  font-weight: 300;
+}
+
 .App {
   text-align: center;
 }
@@ -14,14 +28,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #100000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 0.5rem;
 }
 
 .App-link {
@@ -42,6 +56,14 @@ $theme-colors: (
   "info": tomato,
   "danger": teal
 );
+
+$font-family-base: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-weight-base: 300;
+
+$h1-font-size: 4.5rem;
+$font-size-base: 1rem;
+$font-weight-bolder: 600;
+$paragraph-margin-bottom: 0.25rem;
 
 /* The following line can be included in a src/App.scss */
 
