@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import { Carousel } from "react-bootstrap";
+import React, { useState } from 'react';
+import { Carousel } from 'react-bootstrap';
+import { random } from './helper';
 
 const NUM_PHOTOS = 10;
-
-const random = (max: number) => {
-  return Math.floor(Math.random() * max);
-};
 
 const getRandomNImages = (n: number): JSX.Element[] => {
   const IMAGES_SIZE = 185;

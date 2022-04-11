@@ -1,8 +1,29 @@
-import React, {useEffect, useRef} from 'react';
+import React, { useRef } from 'react';
 
 import './App.scss';
 import Gallery from "./Gallery";
 import useOnScreen from "./hooks/UseOnScreen";
+import { chooseRandom } from './helper';
+
+const DESCRIPTOR: string = chooseRandom([
+  "Heartthrob",
+  "Wannabe Chef",
+  "Spotify Playlist Connoisseur",
+  "Chaotic Good",
+  "Libra by sign, Pisces by Nature",
+  "Struggling Sweatshirt Addict",
+  "Wrote one guitar song and won't shut up about it",
+  "Wishes Yandhi was released",
+  "Exclusively watches Twitch clips on YouTube",
+  "Liverpool Fan since 2015",
+  "Escape Room Cassanova",
+  "Incredibly Mediocre Photographer",
+  "Cinnabons Leader",
+  "Rocket League Season 1 Player",
+  "Will do the same jigsaw puzzle over and over again",
+  "Surfer Spoiled by Hawaiian water temperatures",
+  "Second white stripe Shaolin Kung Fu student from YMAA"
+]);
 
 // const tryFetch = (url: string) => {
 //   const options = {
@@ -23,55 +44,6 @@ import useOnScreen from "./hooks/UseOnScreen";
 //       console.error(error);
 //     });
 // }
-
-// const random = (max: number) => {
-//   return Math.floor(Math.random() * max);
-// };
-//
-// const getRandomNImages = (n: number) => {
-//   const IMAGES_SIZE = 185;
-//   const ns: number[] = [];
-//
-//   while (n > 0) {
-//     const r = random(IMAGES_SIZE) + 1;
-//
-//     if (ns.includes(r)) {
-//       continue;
-//     }
-//
-//     ns.push(r)
-//
-//     n--;
-//   }
-//
-//   const components = [];
-//   for (let i = 0; i < ns.length; i++) {
-//     const e = ns[i];
-//     components.push(
-//       <div className={`carousel-item ${i === 0 && 'active'}`}>
-//         <img src={require(`./images/pct/${e}.jpg`)} className="d-block w-100" alt={`${e}.jpg`} />
-//       </div>
-//     );
-//   }
-//
-//   return components;
-// };
-//
-// const getCarouselImages = () => {
-//   const components = [];
-//
-//   const IMAGES_SIZE = 185;
-//   for (let i = 0; i < IMAGES_SIZE; i++) {
-//     const n = i + 1;
-//     components.push(
-//       <div className="carousel-item active">
-//         <img src={require(`./images/pct/${n}.jpg`)} className="d-block w-100" alt={`${n}.jpg`} />
-//       </div>
-//     );
-//   }
-//
-//   return components;
-// };
 
 const App = () => {
   const galleryRef = useRef<null | HTMLDivElement>(null);
@@ -132,7 +104,7 @@ const App = () => {
           <br/>
           PCT Alum
           <br/>
-          Heartthrob
+          { DESCRIPTOR }
         </p>
       </header>
       <div className="d-flex justify-content-center separator">
