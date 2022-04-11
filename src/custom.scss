@@ -1,0 +1,33 @@
+// @import './node_modules/bootstrap/scss/variables';
+
+/* make customizations */
+
+$theme-colors: (
+        "info": tomato,
+        "danger": teal
+);
+
+$font-family-base: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-weight-base: 300;
+
+$h1-font-size: 4.5rem;
+$font-size-base: 1rem;
+$font-weight-bolder: 600;
+$paragraph-margin-bottom: 0.25rem;
+
+$primary-font-color: #ffffff;
+$secondary-font-color: #c3c5cd;
+$ternary-font-color: #6d6363;
+
+$primary-color: #4c0606;
+$secondary-color: #5909af;
+
+$background-color: #0a0000;
+$gradient-to: #3b0019;
+$body-bg: $background-color;
+
+$primary-gradient: linear-gradient(338deg, rgba($background-color, 1), rgba($background-color, 1), rgba($gradient-to, 1));
+
+// background-color: #100000;
+
+$btn-border-width: 0px;
