@@ -17,6 +17,15 @@ h2 {
   color: $primary-font-color;
 }
 
+ul {
+  width: 25%;
+}
+
+li {
+  font-size: small;
+  color: $secondary-font-color;
+}
+
 p {
   color: $secondary-font-color;
 }
@@ -49,8 +58,9 @@ code {
 }
 
 .gallery {
-  max-width: 50%;
+  width: 95%;
   height: 100rem;
+  max-width: 120rem;
 }
 
 .tales {

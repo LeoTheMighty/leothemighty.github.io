@@ -108,8 +108,46 @@ const App = () => {
           Heartthrob
         </p>
       </header>
-      <header><h2> PCT Album </h2></header>
+      <header>
+        <h2> My Pacific Crest Trail Journey </h2>
+        <div>
+          <div>
+            <p>Trail Name: <b>OP</b></p>
+          </div>
+          <div>
+            <p className="justify-content-start">
+              Owl Podiatrist
+              <br/>
+              Over Packed/Over Powered
+              <br/>
+              Obnoxious Person <b>duh</b>
+              <br/>
+              Optimally Packed (i figured it out)
+              <br/>
+              Oh-jesus Pele
+            </p>
+          </div>
+        </div>
+        <ul>
+        </ul>
+      </header>
       <Gallery />
+      <div>
+        <p>Trail Name: <b>OP</b></p>
+      </div>
+      <div>
+        <p className="justify-content-start">
+          Owl Podiatrist
+          <br/>
+          Over Packed/Over Powered
+          <br/>
+          Obnoxious Person <b>duh</b>
+          <br/>
+          Optimally Packed (i figured it out)
+          <br/>
+          Oh-jesus Pele
+        </p>
+      </div>
       <header> <h2> Projects </h2> </header>
       <header> <h2> Resume </h2> </header>
       <header> <h2> AOC Solutions </h2> </header>
