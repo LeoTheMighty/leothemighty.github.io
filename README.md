@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# Welcome to my website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Just a cool place to put some stuff I had been thinking about for a while.
 
-## Available Scripts
+It's time to do some stuff for myself after all, so I figured hey let's work on
+that website I've dreaming about for a while now and just say fuck it and make it . yanno ?!
 
-In the project directory, you can run:
+Anyways, you can go look at all PCT photos in the images folder. I know I probably didn't have
+to just shove them all in there but lmfao idc. Ur right maybe there are performance issues but I
+tried to really choose only the absolute best photos. fuck it fine maybe I'll shove them onto S3
+one of these days.
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# TODO:
+* MAKE THE STARS
+* Resume section
+  * PDF Viewer? iframe for google's own?
+* Projects:
+  * AOC Solution Viewer + Source Code
+  * .dotfiles would be cool
+  * Pillars link!!! https://leothemighty.github.io/Pillars
+  * Old shitty website link lol https://leothemighty.github.io/home
+  * Spotify Runner (i bet you could run a python script)
+  * PCT Permit Checker was really cool!!
+  * Any of the C++ games from way back in the day worth trying?
+  * Computer Graphics final project would be really cool actually
+  * Instagram Fame (if I can actually make it)
+  * Github Statistics Viewer? (that's kinda cheesy)
+* About Me:
+  * Picture of me for sure.
+* PCT Section:
+  * Add a map of captions?
+  * new folder and if the text file exists in directory display caption, else display OP line
+  * Fix issue on mac where the text is hidden 
+* Contact section
+  * Email
+  * Phone Number? yikes
+  * Address? bro ?!
+  * I guess Linkedin, Facebook, and Instagram make sense here too.
