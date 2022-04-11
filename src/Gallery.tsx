@@ -33,7 +33,8 @@ const getRandomNImages = (n: number): JSX.Element[] => {
 
 const IMAGES: JSX.Element[] = getRandomNImages(NUM_PHOTOS);
 
-const Gallery = () => {
+const Gallery = ({ visible }: { visible: boolean }) => {
+  console.log(visible);
   const [currentIndex, setCurrentIndex] = useState(0);
   // console.log(currentIndex);
   if (currentIndex > (IMAGES.length - 3)) {
@@ -50,24 +51,9 @@ const Gallery = () => {
   return (
     <div className="d-flex justify-content-center">
       <div className="gallery">
-        <Carousel activeIndex={currentIndex} onSelect={(index) => setCurrentIndex(index)}>
+        <Carousel interval={visible ? 5000 : null} activeIndex={currentIndex} onSelect={(index) => setCurrentIndex(index)}>
             { IMAGES.map((img, i) => <Carousel.Item> { img } </Carousel.Item>)}
         </Carousel>
-        {/*  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"*/}
-        {/*          data-bs-slide="prev" onClick={() => setCurrentIndex((currentIndex - 1) % NUM_PHOTOS)}>*/}
-        {/*    <span className="carousel-control-prev-icon" aria-hidden="true" />*/}
-        {/*    <span className="visually-hidden">Previous</span>*/}
-        {/*  </button>*/}
-        {/*  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"*/}
-        {/*          data-bs-slide="next" onClick={() => setCurrentIndex((currentIndex + 1) % NUM_PHOTOS)}>*/}
-        {/*    <span className="carousel-control-next-icon" aria-hidden="true" />*/}
-        {/*    <span className="visually-hidden">Next</span>*/}
-        {/*  </button>*/}
-        {/*</Carousel>*/}
-        {/*<div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">*/}
-        {/*  <div className="carousel-inner">*/}
-        {/*  </div>*/}
-        {/*</div>*/}
       </div>
     </div>
   )

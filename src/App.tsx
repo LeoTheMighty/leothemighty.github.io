@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, {useEffect, useRef} from 'react';
 
 import './App.scss';
 import Gallery from "./Gallery";
+import useOnScreen from "./hooks/UseOnScreen";
 
 // const tryFetch = (url: string) => {
 //   const options = {
@@ -73,6 +74,14 @@ import Gallery from "./Gallery";
 // };
 
 const App = () => {
+  const galleryRef = useRef<null | HTMLDivElement>(null);
+  const projectsRef = useRef<null | HTMLDivElement>(null);
+  const resumeRef = useRef<null | HTMLDivElement>(null);
+  const profileRef = useRef<null | HTMLDivElement>(null);
+  const aocRef = useRef<null | HTMLDivElement>(null);
+
+  const galleryVisible = useOnScreen(galleryRef);
+
   // useEffect(() => {
   //   tryFetch('https://www.icloud.com/sharedalbum/#B0j53qWtHGJnFql');
     // const options = {
@@ -91,10 +100,28 @@ const App = () => {
     //   });
   // });
 
+  const scrollTo = (dest: string) => {
+    let ref = null;
+
+    if (dest === "gallery") {
+      ref = galleryRef;
+    } else if (dest === "resume") {
+      ref = resumeRef;
+    } else if (dest === "projects") {
+      ref = projectsRef;
+    } else if (dest === "profile") {
+      ref = profileRef;
+    } else if (dest === "aoc") {
+      ref = aocRef;
+    }
+
+    ref && ref.current && ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="App">
-      <div className="d-flex justify-content-end">
-        <button type="button" className="p-0 btn shadow-none">
+      <div className="d-flex justify-content-end separator">
+        <button type="button" className="pr-1 btn shadow-none">
           <i className="bi-list" />
         </button>
       </div>
@@ -108,8 +135,15 @@ const App = () => {
           Heartthrob
         </p>
       </header>
-      <header> <h2> My Pacific Crest Trail Journey </h2> </header>
-      <Gallery />
+      <div className="d-flex justify-content-center separator">
+        <a onClick={() => scrollTo('gallery')} className="col d-flex justify-content-center align-items-center"> Photos </a>
+        <a onClick={() => scrollTo('resume')} className="col d-flex justify-content-center align-items-center"> Resume </a>
+        <a onClick={() => scrollTo('projects')} className="col d-flex justify-content-center align-items-center"> Projects </a>
+        <a onClick={() => scrollTo('profile')} className="col d-flex justify-content-center align-items-center"> About Me </a>
+      </div>
+      <div className="separator" />
+      <header ref={galleryRef}> <h2> My Pacific Crest Trail Journey </h2> </header>
+      <Gallery visible={galleryVisible}/>
       <header>
         <div>
           <div>
@@ -133,13 +167,16 @@ const App = () => {
         </ul>
       </header>
       <br />
-      <header> <h2> Projects </h2> </header>
+      <header ref={projectsRef}> <h2> Projects </h2> </header>
       <h3> ...Working on it. </h3>
       <br />
-      <header> <h2> Resume </h2> </header>
+      <header ref={resumeRef}> <h2> Resume </h2> </header>
       <h3> ...Working on it. </h3>
       <br />
-      <header> <h2> AOC Solutions </h2> </header>
+      <header ref={profileRef}> <h2> About Me </h2> </header>
+      <h3> ...Working on it. </h3>
+      <br />
+      <header ref={aocRef}> <h2> AOC Solutions </h2> </header>
       <h3> ...Working on it. </h3>
       <br />
     </div>
