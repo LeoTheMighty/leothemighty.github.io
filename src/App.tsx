@@ -116,28 +116,28 @@ const App = () => {
       <div className="separator" />
       <header ref={galleryRef}> <h2> My Pacific Crest Trail Journey </h2> </header>
       <Gallery visible={galleryVisible}/>
-      <header>
-        <div>
-          <div>
-            <p>Trail Name: <b>OP</b></p>
-          </div>
-          <div>
-            <p className="justify-content-start">
-              Owl Podiatrist
-              <br/>
-              Over Packed/Over Powered
-              <br/>
-              Obnoxious Person <b>duh</b>
-              <br/>
-              Optimally Packed (i figured it out)
-              <br/>
-              Oh-jesus Pele
-            </p>
-          </div>
-        </div>
-        <ul>
-        </ul>
-      </header>
+      {/*<header>*/}
+      {/*  <div>*/}
+      {/*    <div>*/}
+      {/*      <p>Trail Name: <b>OP</b></p>*/}
+      {/*    </div>*/}
+      {/*    <div>*/}
+      {/*      <p className="justify-content-start">*/}
+      {/*        Owl Podiatrist*/}
+      {/*        <br/>*/}
+      {/*        Over Packed/Over Powered*/}
+      {/*        <br/>*/}
+      {/*        Obnoxious Person <b>duh</b>*/}
+      {/*        <br/>*/}
+      {/*        Optimally Packed (i figured it out)*/}
+      {/*        <br/>*/}
+      {/*        Oh-jesus Pele*/}
+      {/*      </p>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*  <ul>*/}
+      {/*  </ul>*/}
+      {/*</header>*/}
       <br />
       <header ref={projectsRef}> <h2> Projects </h2> </header>
       <h3> ...Working on it. </h3>
