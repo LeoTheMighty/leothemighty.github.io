@@ -4,6 +4,7 @@ import './App.scss';
 import Gallery from "./Gallery";
 import useOnScreen from "./hooks/UseOnScreen";
 import { chooseRandom } from './helper';
+import Resume from './resume.pdf';
 // import Stars from './Stars';
 
 const DESCRIPTOR: string = chooseRandom([
@@ -151,7 +152,29 @@ const App = () => {
         <h3> ...Working on it. </h3>
         <br />
         <header ref={resumeRef}> <h2> Resume </h2> </header>
-        <h3> ...Working on it. </h3>
+        {/*<iframe id="iframepdf" src="files/resume.pdf" />*/}
+        {/*<embed src={'files/resume.pdf'} type="application/pdf" />*/}
+        <iframe
+          className="resume-frame"
+          title="resume"
+          src={`${Resume}#view=Fit&toolbar=0&navpanes=0`}
+          height="100%"
+          width="80%"
+        >
+          <p> Your browser does not support this </p>
+        </iframe>
+        {/*<div className="resume-frame">*/}
+          {/*<embed*/}
+          {/*  src="https://docs.google.com/document/d/1-5_suPfVU-tlXHdqm9aSljvfWqdEhXHQ7Cm8MvAmnNE/edit?usp=sharing"*/}
+          {/*  width="100%" height="1000px"*/}
+          {/*/>*/}
+          {/*<iframe*/}
+          {/*  title="resume"*/}
+          {/*  src={`${Resume}#view=fitH`}*/}
+          {/*  height="100%"*/}
+          {/*  width="100%"*/}
+          {/*/>*/}
+        {/*</div>*/}
         <br />
         <header ref={profileRef}> <h2> About Me </h2> </header>
         <h3> ...Working on it. </h3>
