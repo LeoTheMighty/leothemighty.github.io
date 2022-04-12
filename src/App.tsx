@@ -4,6 +4,7 @@ import './App.scss';
 import Gallery from "./Gallery";
 import useOnScreen from "./hooks/UseOnScreen";
 import { chooseRandom } from './helper';
+// import Stars from './Stars';
 
 const DESCRIPTOR: string = chooseRandom([
   "Heartthrob",
@@ -18,7 +19,7 @@ const DESCRIPTOR: string = chooseRandom([
   "Liverpool Fan since 2015",
   "Escape Room Cassanova",
   "Incredibly Mediocre Photographer",
-  "Cinnabons Leader",
+  "Leader of the Cinnabons",
   "Rocket League Season 1 Player",
   "Will do the same jigsaw puzzle over and over again",
   "Surfer Spoiled by Hawaiian water temperatures",
@@ -91,66 +92,74 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <div className="d-flex justify-content-end separator">
-        <button type="button" className="pr-1 btn shadow-none">
-          <i className="bi-list" />
-        </button>
+    <div className="overlay-container">
+      {/*<Stars n={1} />*/}
+      {/*</div>*/}
+      {/*<div id="stars" />*/}
+      <div id="stars">
+        <div />
       </div>
-      <header className="intro">
-        <h1> Leo Belyi </h1>
-        <p>
-          Software Engineer
-          <br/>
-          PCT Alum
-          <br/>
-          { DESCRIPTOR }
-        </p>
-      </header>
-      <div className="d-flex justify-content-center separator">
-        <a onClick={() => scrollTo('gallery')} className="col d-flex justify-content-center align-items-center"> Photos </a>
-        <a onClick={() => scrollTo('resume')} className="col d-flex justify-content-center align-items-center"> Resume </a>
-        <a onClick={() => scrollTo('projects')} className="col d-flex justify-content-center align-items-center"> Projects </a>
-        <a onClick={() => scrollTo('profile')} className="col d-flex justify-content-center align-items-center"> About Me </a>
+      <div className="App">
+        <div className="d-flex justify-content-end separator">
+          <button type="button" className="pr-1 btn shadow-none">
+            <i className="bi-list" />
+          </button>
+        </div>
+        <header className="intro">
+          <h1> Leo Belyi </h1>
+          <p>
+            Software Engineer
+            <br/>
+            PCT Alum
+            <br/>
+            { DESCRIPTOR }
+          </p>
+        </header>
+        <div className="d-flex justify-content-center separator">
+          <a onClick={() => scrollTo('gallery')} className="col d-flex justify-content-center align-items-center"> Photos </a>
+          <a onClick={() => scrollTo('resume')} className="col d-flex justify-content-center align-items-center"> Resume </a>
+          <a onClick={() => scrollTo('projects')} className="col d-flex justify-content-center align-items-center"> Projects </a>
+          <a onClick={() => scrollTo('profile')} className="col d-flex justify-content-center align-items-center"> About Me </a>
+        </div>
+        <div className="separator" />
+        <header ref={galleryRef}> <h2> My Pacific Crest Trail Journey </h2> </header>
+        <Gallery visible={galleryVisible}/>
+        {/*<header>*/}
+        {/*  <div>*/}
+        {/*    <div>*/}
+        {/*      <p>Trail Name: <b>OP</b></p>*/}
+        {/*    </div>*/}
+        {/*    <div>*/}
+        {/*      <p className="justify-content-start">*/}
+        {/*        Owl Podiatrist*/}
+        {/*        <br/>*/}
+        {/*        Over Packed/Over Powered*/}
+        {/*        <br/>*/}
+        {/*        Obnoxious Person <b>duh</b>*/}
+        {/*        <br/>*/}
+        {/*        Optimally Packed (i figured it out)*/}
+        {/*        <br/>*/}
+        {/*        Oh-jesus Pele*/}
+        {/*      </p>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*  <ul>*/}
+        {/*  </ul>*/}
+        {/*</header>*/}
+        <br />
+        <header ref={projectsRef}> <h2> Projects </h2> </header>
+        <h3> ...Working on it. </h3>
+        <br />
+        <header ref={resumeRef}> <h2> Resume </h2> </header>
+        <h3> ...Working on it. </h3>
+        <br />
+        <header ref={profileRef}> <h2> About Me </h2> </header>
+        <h3> ...Working on it. </h3>
+        <br />
+        <header ref={aocRef}> <h2> AOC Solutions </h2> </header>
+        <h3> ...Working on it. </h3>
+        <br />
       </div>
-      <div className="separator" />
-      <header ref={galleryRef}> <h2> My Pacific Crest Trail Journey </h2> </header>
-      <Gallery visible={galleryVisible}/>
-      {/*<header>*/}
-      {/*  <div>*/}
-      {/*    <div>*/}
-      {/*      <p>Trail Name: <b>OP</b></p>*/}
-      {/*    </div>*/}
-      {/*    <div>*/}
-      {/*      <p className="justify-content-start">*/}
-      {/*        Owl Podiatrist*/}
-      {/*        <br/>*/}
-      {/*        Over Packed/Over Powered*/}
-      {/*        <br/>*/}
-      {/*        Obnoxious Person <b>duh</b>*/}
-      {/*        <br/>*/}
-      {/*        Optimally Packed (i figured it out)*/}
-      {/*        <br/>*/}
-      {/*        Oh-jesus Pele*/}
-      {/*      </p>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*  <ul>*/}
-      {/*  </ul>*/}
-      {/*</header>*/}
-      <br />
-      <header ref={projectsRef}> <h2> Projects </h2> </header>
-      <h3> ...Working on it. </h3>
-      <br />
-      <header ref={resumeRef}> <h2> Resume </h2> </header>
-      <h3> ...Working on it. </h3>
-      <br />
-      <header ref={profileRef}> <h2> About Me </h2> </header>
-      <h3> ...Working on it. </h3>
-      <br />
-      <header ref={aocRef}> <h2> AOC Solutions </h2> </header>
-      <h3> ...Working on it. </h3>
-      <br />
     </div>
   );
 }

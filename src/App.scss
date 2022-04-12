@@ -1,5 +1,8 @@
 @import 'src/custom';
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import 'stars';
+
+@import "~bootstrap/scss/bootstrap";
 
 body {
   margin: 0;
@@ -7,6 +10,14 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  //::before {
+  //  top: 10px;
+  //  content: '';
+  //  background: #ffffff;
+  //  height: 1px;
+  //  width: 1px;
+  //}
 }
 
 h1 {
@@ -48,9 +59,63 @@ code {
   font-weight: 300;
 }
 
-.App {
+.overlay-container {
   background-image: $primary-gradient;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.App {
+  // background-image: $primary-gradient;
   text-align: center;
+  //width: 100%;
+  //
+  //height: 100%;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+   z-index: 0;
+
+  //::before {
+  //}
+}
+
+.Stars {
+  background-color: rgba(#000000, 0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  //z-index: 0;
+  ::after {
+    content: '';
+
+    display: block;
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+    background-color: $white;
+    position: relative;
+    z-index: 10;
+
+    box-shadow: 0 0 $white, 50vh 100px $white, 150px 250px $white, 0 0 $white, 250px 100px $white, 0 0 $white;
+  }
+
+  //::before {
+  //  content: '';
+  //  background-color: $white;
+  //  display: block;
+  //  width: 100px;
+  //  height: 100px;
+  //  top: 100px;
+  //  bottom: 100px;
+  //  left: 100px;
+  //  right: 100px;
+  //}
 }
 
 .separator {
@@ -74,6 +139,7 @@ code {
   // height: 18rem;
   max-width: 120rem;
   margin-bottom: 1rem;
+  z-index: 50;
 }
 
 .tales {
@@ -98,7 +164,3 @@ code {
   font-size: 3rem;
   color: $ternary-font-color;
 }
-
-/* The following line can be included in a src/App.scss */
-
-@import "~bootstrap/scss/bootstrap";

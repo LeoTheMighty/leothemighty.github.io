@@ -27,6 +27,22 @@ const captions: { [s: number]: JSX.Element } = {
   2: <p> My backpack at the end of Oregon :) She was definitely in rough shape but she made it all the way from Campo to Leavenworth!! </p>,
   3: <p> My friend Lily and I went through this volcano-rock invested area and it looked so so so cool! </p>,
   4: <p> Me being particularly frustrated with the day </p>,
+  5: <p> Walking on a lava field is <b>mad</b> fun y'all</p>,
+  7: (
+    <p>
+      This picture I actually took on like a really shitty day
+      that I was like done with trail and in pain and scared of
+      fires and i missed my cat and i was sleep deprived because
+      of mice jumping around at midnight and onto Hunter's forehead
+      and most importantly I'd been walking through an exposed burn
+      section (no sun tree protection), then I came up on this really
+      lush portion here, and I stopped and realized that we really
+      live in such a resilient and beautiful world. That even
+      though we think things are all going to shit, the world can
+      bounce back from a whole of destruction, and that the only
+      variable is if we're there to see it.
+    </p>
+  ),
   8: <p> Me and my friend Nate enjoying a fantastic morning in Washington </p>,
   9: <p> Huckleberries!!!!!!!!!!!!!!! </p>,
   11: <p> My first day after being reunited with my desert trail family :) </p>,

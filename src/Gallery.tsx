@@ -5,24 +5,33 @@ import captions from './captions';
 
 const INITIAL_PHOTOS = 5;
 const NUM_FETCH_PHOTOS = 10;
+const USED_PHOTO_IDS: number[] = [];
 
 type Image = {
   image: JSX.Element;
   caption: JSX.Element;
 }
 
+const IMAGES: Image[] = [];
+
 const getRandomNImages = (n: number, keyStart: number = 0): Image[] => {
   const IMAGES_SIZE = 185;
   const ns: number[] = [];
 
   while (n > 0) {
+    if (IMAGES.length >= IMAGES_SIZE) {
+      break;
+    }
+
     const r = random(IMAGES_SIZE) + 1;
 
-    if (ns.includes(r)) {
+    if (USED_PHOTO_IDS.includes(r)) {
       continue;
     }
 
-    ns.push(r)
+    USED_PHOTO_IDS.push(r);
+    ns.push(r);
+
     n--;
   }
 
@@ -42,7 +51,7 @@ const getRandomNImages = (n: number, keyStart: number = 0): Image[] => {
   return images;
 };
 
-const IMAGES: Image[] = getRandomNImages(INITIAL_PHOTOS);
+Array.prototype.push.apply(IMAGES, getRandomNImages(INITIAL_PHOTOS));
 
 const Gallery = ({ visible }: { visible: boolean }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

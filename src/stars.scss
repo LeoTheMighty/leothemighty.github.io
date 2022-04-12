@@ -1,3 +1,6 @@
+@import "~bootstrap/scss/bootstrap";
+@import 'custom';
+
 //@for $i from 1 through 4 {
 //  .#{$class-slug}-#{$i}
 //  width: 60px + $i
@@ -7,4 +10,90 @@
 //    height: 200px;
 //    border-radius: 50%;
 //  }
+//}
+
+@function multiple-box-shadow ($n, $c) {
+  $value: '#{random(2000)}px #{random(20000)}px #{$c}';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #{$c}';
+  }
+  @return unquote($value)
+}
+
+@function outer-random($n) {
+  @return ((random($n) - ($n / 2)) * 2);
+}
+
+@function multiple-outer-box-shadow ($n, $c) {
+  $value: '#{outer-random(2000)}px #{outer-random(20000)}px #{$c}';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{outer-random(2000)}px #{outer-random(2000)}px #{$c}';
+  }
+  @return unquote($value)
+}
+
+
+
+#stars {
+  background-color: rgba($blue, 0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  z-index: 20;
+
+  ::before {
+    content: '';
+
+    display: block;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: $ternary-font-color;
+    opacity: 1;
+    position: relative;
+    z-index: 10;
+
+    box-shadow: multiple-box-shadow(200, $ternary-font-color);//0 0 $white, 50vh 100px $white, 150px 250px $white, 0 0 $white, 250px 100px $white, 0 0 $white;
+    animation: animStar 90s linear infinite !important;
+    // -webkit-animation: animStar 150s linear infinite !important;
+  }
+}
+
+@keyframes animStar {
+  // transform: translate(0, 0px);
+  from {
+    box-shadow: multiple-box-shadow(100, $ternary-font-color),
+                multiple-box-shadow(100, $secondary-font-color),
+                multiple-box-shadow(100, $primary-color),
+                multiple-box-shadow(100, $white);
+  }
+  to {
+    //box-shadow: multiple-outer-box-shadow(300, $ternary-font-color);
+    box-shadow: multiple-outer-box-shadow(100, $ternary-font-color),
+                multiple-outer-box-shadow(100, $secondary-font-color),
+                multiple-outer-box-shadow(100, $primary-color),
+                multiple-outer-box-shadow(100, $white);
+  }
+}
+
+
+
+//multiple-box-shadow(100);
+
+  //::before {
+  //  content: '';
+  //
+  //  background-color: $white;
+  //  display: block;
+  //  width: 100px;
+  //  height: 100px;
+  //  top: 100px;
+  //  bottom: 100px;
+  //  left: 100px;
+  //  right: 100px;
+  //}
 //}
