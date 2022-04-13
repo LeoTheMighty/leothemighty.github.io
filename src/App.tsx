@@ -97,9 +97,8 @@ const App = () => {
       {/*<Stars n={1} />*/}
       {/*</div>*/}
       {/*<div id="stars" />*/}
-      <div id="stars">
-        <div />
-      </div>
+      {/*<div id="stars"><div /></div>*/}
+      <div id="blobs"><div /></div>
       <div className="App">
         <div className="d-flex justify-content-end separator">
           <button type="button" className="pr-1 btn shadow-none">
@@ -107,8 +106,8 @@ const App = () => {
           </button>
         </div>
         <header className="intro">
-          <h1> Leo Belyi </h1>
-          <p>
+          <h1 className="above"> Leo Belyi </h1>
+          <p className="above">
             Software Engineer
             <br/>
             PCT Alum
@@ -123,7 +122,7 @@ const App = () => {
           <a onClick={() => scrollTo('profile')} className="col d-flex justify-content-center align-items-center"> About Me </a>
         </div>
         <div className="separator" />
-        <header ref={galleryRef}> <h2> My Pacific Crest Trail Journey </h2> </header>
+        <header className="above" ref={galleryRef}> <h2> My Pacific Crest Trail Journey </h2> </header>
         <Gallery visible={galleryVisible}/>
         {/*<header>*/}
         {/*  <div>*/}
@@ -157,7 +156,7 @@ const App = () => {
         <iframe
           className="resume-frame"
           title="resume"
-          src={`${Resume}#view=Fit&toolbar=0&navpanes=0`}
+          src={`${Resume}#view=FitV&toolbar=0&navpanes=0`}
           height="100%"
           width="80%"
         >
