@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 import './App.scss';
 import Gallery from "./Gallery";
@@ -48,6 +48,9 @@ const DESCRIPTOR: string = chooseRandom([
 // }
 
 const App = () => {
+  const [starsOn, setStarsOn] = useState(false);
+  const [blobsOn, setBlobsOn] = useState(true);
+
   const galleryRef = useRef<null | HTMLDivElement>(null);
   const projectsRef = useRef<null | HTMLDivElement>(null);
   const resumeRef = useRef<null | HTMLDivElement>(null);
@@ -97,13 +100,31 @@ const App = () => {
       {/*<Stars n={1} />*/}
       {/*</div>*/}
       {/*<div id="stars" />*/}
-      {/*<div id="stars"><div /></div>*/}
-      <div id="blobs"><div /></div>
+      { starsOn && (<div id="stars"><div /></div>) }
+      { blobsOn && (<div id="blobs"><div /></div>) }
       <div className="App">
-        <div className="d-flex justify-content-end separator">
-          <button type="button" className="pr-1 btn shadow-none">
-            <i className="bi-list" />
-          </button>
+        <div className="d-flex separator">
+          <div className="col d-flex justify-content-start">
+            <button
+              type="button"
+              className="above pr-1 btn shadow-none"
+              onClick={() => setBlobsOn(p => !p)}
+            >
+              <i className={"bi bi-balloon" + (blobsOn ? "-fill bi-lit" : "")} />
+            </button>
+            <button
+              type="button"
+              className="above pr-1 btn shadow-none"
+              onClick={() => setStarsOn(p => !p)}
+            >
+              <i className={"bi bi-stars" + (starsOn ? " bi-lit" : "")} />
+            </button>
+          </div>
+          <div className="col d-flex justify-content-end">
+            <button type="button" className="above pr-1 btn shadow-none">
+              <i className="bi-list" />
+            </button>
+          </div>
         </div>
         <header className="intro">
           <h1 className="above"> Leo Belyi </h1>

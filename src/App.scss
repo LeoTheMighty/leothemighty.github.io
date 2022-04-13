@@ -174,6 +174,15 @@ code {
 }
 
 .bi-list {
-  font-size: 3rem;
+  font-size: 2rem;
   color: $ternary-font-color;
+}
+
+.bi {
+  font-size: 2rem;
+  color: $ternary-font-color;
+}
+
+.bi-lit {
+  color: $primary-font-color;
 }
