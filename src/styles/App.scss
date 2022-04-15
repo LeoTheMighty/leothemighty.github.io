@@ -1,9 +1,9 @@
-@import 'src/custom';
+@import 'src/styles/custom';
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-@import 'stars';
-@import 'blurblobs';
+@import 'src/styles/stars';
+@import 'src/styles/blurblobs';
 
-@import "~bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
 
 body {
   margin: 0;
@@ -176,6 +176,11 @@ code {
 .bi-list {
   font-size: 2rem;
   color: $ternary-font-color;
+}
+
+.bi-arrow-clockwise {
+  color: $ternary-font-color;
+  font-size: 1rem;
 }
 
 .bi {

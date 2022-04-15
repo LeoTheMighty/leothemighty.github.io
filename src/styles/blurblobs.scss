@@ -1,0 +1,131 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import 'src/styles/custom';
+
+$blur-radius: 60px;
+$spread-radius: 100px;
+$blob-radius: 150px;
+$t: $blob-radius;
+$speed: 4;
+
+
+// Un-translate the coordinate.
+@function t($d) {
+  @return calc($d + $t);
+}
+
+@function rand($limit, $u) {
+  @return random() * $limit * $u;
+}
+
+@function dim ($u, $x) {
+  @return ($x * rand(100, $u)) - (50 * $u);
+}
+
+@function from-shadow($c, $x) {
+  @return shadow(dim(1vw, $x), dim(1vh, $x), $blur-radius, $spread-radius, $c);
+}
+
+@function to-shadow($c, $x) {
+  @return shadow(dim(1vw, $x), dim(1vh, $x), $blur-radius, $spread-radius, $c);
+}
+
+@function shadow($x, $y, $b, $s, $c) {
+  @return t($x) t($y) $b $s $c;
+}
+
+/**
+ size at least wise
+ */
+@function full-box-box-shadow ($n, $c, $x) {
+  $value: '#{from-shadow($c, $x)}';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{from-shadow($c, $x)}';
+  }
+  @return unquote($value)
+}
+
+@function multiple-box-shadow ($n, $c) {
+  $value: '#{rand(100, 1vw)} #{rand(100, 1vh)} #{$blur-radius} #{$spread-radius} #{$c}';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{rand(100, 1vw)} #{rand(100, 1vh)} #{$blur-radius} #{$spread-radius} #{$c}';
+  }
+  @return unquote($value)
+}
+
+
+@function outer-random($n) {
+  @return (random($n) /* - ($n / 2)) */* 2);
+}
+
+@function multiple-outer-box-shadow ($n, $c) {
+  $value: '#{outer-random(100)}vw #{outer-random(100)}vh #{$blur-radius} #{$spread-radius} #{$c}';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{outer-random(100)}vw #{outer-random(100)}vh #{$blur-radius} #{$spread-radius} #{$c}';
+  }
+  @return unquote($value)
+}
+
+
+
+#blobs {
+  background-color: rgba($blue, 0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  z-index: 0;
+
+  ::before {
+    content: '';
+
+    transform: translate(-2 * $t, -2 * $t);
+    display: block;
+    height: $blob-radius * 2;
+    // margin-top: -22vh;
+    width: $blob-radius * 2;
+    border-radius: 50%;
+    background-color: rgba(0, 1, 1, 1);
+    opacity: 1;
+    position: relative;
+    z-index: -10;
+    //box-shadow: 0vw 100vh $black, 0 50vh $black, 0 100vh $black, 0 100vh $black,
+    //            50vw 0vh $black, 50vw 50vh $black, 50vw 100vh $black,
+    //            100vw 0vh $black, 100vw 50vh $black, 100vw 100vh $black;
+    //box-shadow: from-shadow($black);
+    //box-shadow: t(0vw) t(100vh) $black, t(0vw) t(50vh) $black;
+    //box-shadow:
+    //        shadow(0vw, 0vh, 0, 0, $black),
+    //        shadow(0vw, 50vh, 0, 0, $black);
+
+
+
+
+    // box-shadow: multiple-box-shadow(200, $ternary-font-color);//0 0 $white, 50vh 100px $white, 150px 250px $white, 0 0 $white, 250px 100px $white, 0 0 $white;
+    animation: animBlobs 90s linear infinite !important;
+    // -webkit-animation: animStar 150s linear infinite !important;
+  }
+}
+
+@keyframes animBlobs {
+  // transform: translate(0, 0px);
+  from {
+    box-shadow:
+            full-box-box-shadow(5, #361e1e, 2),
+            full-box-box-shadow(5, #230000, 2),
+            full-box-box-shadow(15, #150000, 2),
+            full-box-box-shadow(5, #340202, 2);
+  }
+  to {
+    //box-shadow: full-box-box-shadow(20, $primary-gradient);
+    //box-shadow: multiple-outer-box-shadow(300, $ternary-font-color);
+    box-shadow:
+            full-box-box-shadow(5, #230000, 4),
+            full-box-box-shadow(5, #230000, 4),
+            full-box-box-shadow(15, #150000, 4),
+            full-box-box-shadow(5, rgba(35, 11, 11, 0.71), 4);
+  }
+}
+
