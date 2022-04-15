@@ -1,18 +1,18 @@
 import React, { useRef, useState } from 'react';
 
-import './App.scss';
+import './styles/App.scss';
 import Gallery from "./Gallery";
 import useOnScreen from "./hooks/UseOnScreen";
 import { chooseRandom } from './helper';
-import Resume from './resume.pdf';
+import Resume from './files/resume.pdf';
 // import Stars from './Stars';
 
-const DESCRIPTOR: string = chooseRandom([
+const DESCRIPTORS = [
   "Heartthrob",
   "Wannabe Chef",
   "Spotify Playlist Connoisseur",
   "Chaotic Good",
-  "Libra by sign, Pisces by Nature",
+  // "Libra by sign, Pisces by Nature",
   "Struggling Sweatshirt Addict",
   "Wrote one guitar song and won't shut up about it",
   "Wishes Yandhi was released",
@@ -24,8 +24,16 @@ const DESCRIPTOR: string = chooseRandom([
   "Rocket League Season 1 Player",
   "Will do the same jigsaw puzzle over and over again",
   "Surfer Spoiled by Hawaiian water temperatures",
-  "Second white stripe Shaolin Kung Fu student from YMAA"
-]);
+  "Second white stripe Shaolin Kung Fu student from YMAA",
+  "Backend engineer who is trying out frontend",
+  "Never scored less than a 5 on an AP exam",
+  "Built Different",
+  // "Pushing P",
+  "Real imposter who thinks they have imposter syndrome",
+  "Spoiled by 100% Pure Kona Coffee",
+  ""
+];
+const getRandomDescriptor = (): string => chooseRandom(DESCRIPTORS);
 
 // const tryFetch = (url: string) => {
 //   const options = {
@@ -48,6 +56,7 @@ const DESCRIPTOR: string = chooseRandom([
 // }
 
 const App = () => {
+  const [descriptor, setDescriptor] = useState<string>(getRandomDescriptor());
   const [starsOn, setStarsOn] = useState(false);
   const [blobsOn, setBlobsOn] = useState(true);
 
@@ -97,9 +106,6 @@ const App = () => {
 
   return (
     <div className="overlay-container">
-      {/*<Stars n={1} />*/}
-      {/*</div>*/}
-      {/*<div id="stars" />*/}
       { starsOn && (<div id="stars"><div /></div>) }
       { blobsOn && (<div id="blobs"><div /></div>) }
       <div className="App">
@@ -131,9 +137,17 @@ const App = () => {
           <p className="above">
             Software Engineer
             <br/>
-            PCT Alum
+            Pacific Crest Trail 2021 Alum
             <br/>
-            { DESCRIPTOR }
+            { descriptor }
+            <br/>
+            <button
+              type="button"
+              className="above p-0 btn shadow-none"
+              onClick={() => setDescriptor(getRandomDescriptor())}
+            >
+              <i className="bi-arrow-clockwise" />
+            </button>
           </p>
         </header>
         <div className="d-flex justify-content-center separator">
@@ -145,32 +159,10 @@ const App = () => {
         <div className="separator" />
         <header className="above" ref={galleryRef}> <h2> My Pacific Crest Trail Journey </h2> </header>
         <Gallery visible={galleryVisible}/>
-        {/*<header>*/}
-        {/*  <div>*/}
-        {/*    <div>*/}
-        {/*      <p>Trail Name: <b>OP</b></p>*/}
-        {/*    </div>*/}
-        {/*    <div>*/}
-        {/*      <p className="justify-content-start">*/}
-        {/*        Owl Podiatrist*/}
-        {/*        <br/>*/}
-        {/*        Over Packed/Over Powered*/}
-        {/*        <br/>*/}
-        {/*        Obnoxious Person <b>duh</b>*/}
-        {/*        <br/>*/}
-        {/*        Optimally Packed (i figured it out)*/}
-        {/*        <br/>*/}
-        {/*        Oh-jesus Pele*/}
-        {/*      </p>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*  <ul>*/}
-        {/*  </ul>*/}
-        {/*</header>*/}
         <br />
-        <header ref={projectsRef}> <h2> Projects </h2> </header>
-        <h3> ...Working on it. </h3>
-        <br />
+        {/*<header ref={projectsRef}> <h2> Projects </h2> </header>*/}
+        {/*<h3> ...Working on it. </h3>*/}
+        {/*<br />*/}
         <header ref={resumeRef}> <h2> Resume </h2> </header>
         {/*<iframe id="iframepdf" src="files/resume.pdf" />*/}
         {/*<embed src={'files/resume.pdf'} type="application/pdf" />*/}
@@ -196,12 +188,12 @@ const App = () => {
           {/*/>*/}
         {/*</div>*/}
         <br />
-        <header ref={profileRef}> <h2> About Me </h2> </header>
-        <h3> ...Working on it. </h3>
-        <br />
-        <header ref={aocRef}> <h2> AOC Solutions </h2> </header>
-        <h3> ...Working on it. </h3>
-        <br />
+        {/*<header ref={profileRef}> <h2> About Me </h2> </header>*/}
+        {/*<h3> ...Working on it. </h3>*/}
+        {/*<br />*/}
+        {/*<header ref={aocRef}> <h2> AOC Solutions </h2> </header>*/}
+        {/*<h3> ...Working on it. </h3>*/}
+        {/*<br />*/}
       </div>
     </div>
   );

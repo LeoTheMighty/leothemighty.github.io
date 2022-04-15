@@ -11,28 +11,30 @@ tried to really choose only the absolute best photos. fuck it fine maybe I'll sh
 one of these days.
 
 # TODO:
-* MAKE THE STARS
-* Resume section
-  * PDF Viewer? iframe for google's own?
-* Projects:
-  * AOC Solution Viewer + Source Code
-  * .dotfiles would be cool
-  * Pillars link!!! https://leothemighty.github.io/Pillars
-  * Old shitty website link lol https://leothemighty.github.io/home
-  * Spotify Runner (i bet you could run a python script)
-  * PCT Permit Checker was really cool!!
-  * Any of the C++ games from way back in the day worth trying?
-  * Computer Graphics final project would be really cool actually
-  * Instagram Fame (if I can actually make it)
-  * Github Statistics Viewer? (that's kinda cheesy)
-* About Me:
-  * Picture of me for sure.
-* PCT Section:
-  * Add a map of captions?
-  * new folder and if the text file exists in directory display caption, else display OP line
-  * Fix issue on mac where the text is hidden 
-* Contact section
-  * Email
-  * Phone Number? yikes
-  * Address? bro ?!
-  * I guess Linkedin, Facebook, and Instagram make sense here too.
+- [x] MAKE THE STARS
+- [ ] Resume section
+  - [x] PDF Viewer? iframe for google's own?
+  - [ ] But make it work for mobile 
+- [ ] Projects:
+  - [ ] AOC Solution Viewer + Source Code
+  - [ ] .dotfiles would be cool
+  - [ ] Pillars link!!! https://leothemighty.github.io/Pillars
+  - [ ] Old shitty website link lol https://leothemighty.github.io/home
+  - [ ] ~~ Spotify Runner (i bet you could run a python script) ~~
+      - [ ] rip nope, but would give me a chance to write another one!
+      - [ ] or you could put it on AWS Lambda even :o
+  - [ ] PCT Permit Checker was really cool!!
+  - [ ] Any of the C++ games from way back in the day worth trying?
+  - [ ] Computer Graphics final project would be really cool actually
+  - [ ] Instagram Fame (if I can actually make it)
+  - [ ] Github Statistics Viewer? (that's kinda cheesy)
+- [ ] About Me:
+  - [ ] Picture of me for sure.
+- [ ] PCT Section:
+  - [x] Add a map of captions?
+  - [ ] new folder and if the text file exists in directory display caption, else display OP line
+- [ ] Contact section
+  - [ ] Email
+  - [ ] Phone Number? yikes
+  - [ ] Address? bro ?!
+  - [ ] I guess Linkedin, Facebook, and Instagram make sense here too.
