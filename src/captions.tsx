@@ -150,7 +150,7 @@ const captions: { [s: number]: JSX.Element } = {
   159: <p> This was a really amazing crew to hang out with!! The zero day we just for Bennett still brings a smile to my face because it was just that special :) </p>,
   161: <p> Nate and I playing finger jousting </p>,
   162: <p> Chipmunk! Don't feed them please </p>,
-  164: <p> Sydney in a rare moment of not being a complete dumbass (like me) </p>,
+  164: <p> Last minute we decided to climb this thing called Tinker's Knob (lol) and it was actually pretty cool with stone thrones at the top and everything. </p>,
   165: <p> The kindness of strangers I experienced was absolutely mind-blowing. </p>,
   166: <p> This road was completely closed when we were walking on it so instead of getting a hitch, we ended up getting picked up by squad cars and essentially emergency evacuated </p>,
   167: <p> Wild seeing this entire town covered in firefighters trying to save NorCal from the dixie fire. You can see the plumes of smoke coming in the distance. </p>,
