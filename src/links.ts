@@ -1,9 +1,12 @@
 import Resume from './files/resume.pdf';
 import CS4300Preview from './images/cs4300preview.png';
+import pillarsPreview from './images/pillarspreview.png';
+import homePreview from './images/homepreview.png';
+import me from './images/me.png';
+import profile from './images/profilecover.png';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  joekt: 'https://joekt.dev/',
   projects: {
     cs4300: {
       preview: CS4300Preview,
@@ -14,10 +17,26 @@ export default {
         'https://cs4300.joekt.dev/a6/Assignment6.html',
       ],
     },
+    pillars: {
+      site: 'https://leothemighty.github.io/Pillars/',
+      source: 'https://github.com/LeoTheMighty/Pillars',
+      preview: pillarsPreview,
+    },
+    firstSite: {
+      site: 'https://leothemighty.github.io/home/',
+      source: 'https://github.com/LeoTheMighty/home',
+      preview: homePreview,
+    }
   },
   resume: Resume,
+  source: 'https://github.com/LeoTheMighty/leothemighty.github.io',
   instagram: 'https://www.instagram.com/lonisballington/',
   facebook: 'https://www.facebook.com/leo.ntel.1/',
   linkedin: 'https://www.linkedin.com/in/leonid-belyi/',
   github: 'https://github.com/LeoTheMighty',
+  email: 'mailto:leonid@ac93.org',
+  spotify: 'https://open.spotify.com/user/leothemighty123',
+  joekt: 'https://joekt.dev/',
+  me,
+  profile,
 };

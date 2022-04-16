@@ -29,7 +29,9 @@ $background-color: #0a0000;
 $gradient-to: #3b0019;
 $body-bg: $background-color;
 
-$primary-gradient: linear-gradient(338deg, rgba($background-color, 1), rgba($background-color, 1), rgba($gradient-to, 1));
+//$primary-gradient: linear-gradient(338deg, rgba($background-color, 1), rgba($background-color, 1), rgba($gradient-to, 1));
+//$primary-gradient: repeating-linear-gradient(338deg, rgba($background-color, 1), rgba($background-color, 1), rgba($gradient-to, 1) 1vh);
+$primary-gradient: repeating-linear-gradient(338deg, rgba($gradient-to, 1), rgba($background-color, 1), rgba($gradient-to, 1) 200vh);
 
 // background-color: #100000;
 

@@ -9,4 +9,9 @@ const random = (max: number) => {
 
 const chooseRandom = <T>(list: T[]): T => list[random(list.length)];
 
-export { chooseRandom, random };
+const newTab = {
+  target: "_blank",
+  rel: "noreferrer noopener",
+};
+
+export { chooseRandom, random, newTab };

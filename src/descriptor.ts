@@ -1,0 +1,46 @@
+import { chooseRandom } from './helper';
+
+const DESCRIPTORS = [
+  "Heartthrob",
+  "Wannabe Chef",
+  "Spotify Playlist Connoisseur",
+  "Chaotic Good",
+  "Libra by Sign, Leo by Name",
+  "Struggling Sweatshirt Addict",
+  "Wrote one guitar song and won't shut up about it",
+  "Wishes Yandhi was released",
+  "Exclusively watches Twitch clips on YouTube",
+  "Liverpool Fan since 2015",
+  "Escape Room Cassanova",
+  "Incredibly Mediocre Photographer",
+  "Leader of the Cinnabons",
+  "Rocket League Season 1 Player",
+  "Will do the same jigsaw puzzle over and over again",
+  "Surfer Spoiled by Hawaiian water temperatures",
+  "Second white stripe Shaolin Kung Fu student from YMAA",
+  "Backend engineer who is trying out frontend",
+  "Never scored less than a 5 on an AP exam",
+  "Built Different",
+  "Real imposter who thinks they have imposter syndrome",
+  "Spoiled by 100% Pure Kona Coffee",
+  "Ultimate Sugar Tooth",
+  "Has made a grown man cry by making him cinnamon buns from scratch",
+  "Whistles like a monster",
+  "Got a $100 tip at a bar from a super drunk guy on new year's eve because of a trombone solo played so well",
+  "Doesn't get lost in minecraft",
+  "Listens to Blonde on repeat",
+  "Has run a sub-2-hour half marathon ONCE",
+  "went on a small (2653 miles) stroll the day after graduation",
+  "Has never heard his last name correctly pronounced the first time",
+  "Git wizard in training",
+  "Middle child",
+  "Northeatern Unviersity's Khoury College of Computer Science Summa Cum Laude Graduate; Class of 2021",
+  "Took him 8 hours to code these stars :(",
+  "Discreetly Questions Authority",
+  "Existential Crisis Aficionado",
+  "Don't click that button below me you may never see me again :(",
+];
+
+const getRandomDescriptor = (): string => chooseRandom(DESCRIPTORS);
+
+export { getRandomDescriptor };
