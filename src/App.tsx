@@ -4,7 +4,9 @@ import './styles/App.scss';
 import Gallery from "./Gallery";
 import useOnScreen from "./hooks/UseOnScreen";
 import { chooseRandom } from './helper';
+import links from './links';
 import Resume from './files/resume.pdf';
+import CS4300Preview from './images/cs4300preview.png';
 
 const DESCRIPTORS = [
   "Heartthrob",
@@ -47,7 +49,10 @@ const DESCRIPTORS = [
   "Don't click that button below me you may never see me again :(",
 ];
 
-console.log(DESCRIPTORS.length);
+const newTab = {
+  target: "_blank",
+  rel: "noreferrer noopener",
+};
 
 const getRandomDescriptor = (): string => chooseRandom(DESCRIPTORS);
 
@@ -156,59 +161,94 @@ const App = () => {
         <header ref={galleryRef}> <h2 className="above"> My Pacific Crest Trail Journey </h2> </header>
         <Gallery visible={galleryVisible}/>
         <br />
-        {/*<header ref={projectsRef}> <h2> Projects </h2> </header>*/}
-        {/*<h3> ...Working on it. </h3>*/}
-        {/*<br />*/}
         <header className="above" ref={resumeRef}> <h2> Resume </h2> </header>
         {/*<iframe id="iframepdf" src="files/resume.pdf" />*/}
         {/*<embed src={'files/resume.pdf'} type="application/pdf" />*/}
-          <iframe
-            className="resume-frame above"
-            title="resume"
-            src={`${Resume}#view=FitV&toolbar=0&navpanes=0`}
-            height="100%"
-            width="80%"
-          >
-            <p> Your browser does not support this </p>
-          </iframe>
+        <iframe
+          className="resume-frame above"
+          title="resume"
+          src={`${links.resume}#view=FitV&toolbar=0&navpanes=0`}
+          height="100%"
+          width="80%"
+        >
+          <p> Your browser does not support this </p>
+        </iframe>
         <br />
-          <a target="_blank" rel="noopener noreferrer" href={Resume}>
-            <button className="print-button btn btn-danger">
-              Click here to view and print
-            </button>
-          </a>
+        <a target="_blank" rel="noopener noreferrer" href={links.resume}>
+          <button className="print-button btn btn-danger">
+            Click here to view and print
+          </button>
+        </a>
+        <br />
+        <br />
+        <header ref={projectsRef}> <h2> Projects </h2> </header>
+        <div className="mt-5 d-flex justify-content-center">
+          <div className="col">
+            <a href={links.projects.cs4300.assignments[3]} {...newTab}>
+              <img className="project-preview m-2" src={CS4300Preview} alt="CS4300 Final Project Preview" />
+            </a>
+            <p> Last Project view. Press 's' to view cel-shading as shown here </p>
+          </div>
+          <div className="col above">
+            <h3>
+              CS 4300 Computer Graphics
+            </h3>
+            <i> Created in collaboration with
+              <a href={links.joekt} {...newTab}>
+                Joseph Kaming-Thanassi
+              </a>
+            </i>
+
+            <ul>
+              <li><a href={links.projects.cs4300.assignments[0]} {...newTab}>Assignment 3: DNA Model – Non-Hierarchical</a>
+                <ul>
+                  <li>Press the left and right arrow keys to rotate the model.</li>
+                </ul>
+              </li>
+              <li><a href={links.projects.cs4300.assignments[1]} {...newTab}>Assignment 4: DNA Model – Scenegraph</a>
+                <ul>
+                  <li>Camera modes:
+                    <ul>
+                      <li>Press the <code>1</code> key to activate orbit mode. Use the left and right arrow keys to orbit around the model.</li>
+                      <li>Press the <code>2</code> key to activate survey mode. The camera will move around the scene on its own to survey the models.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href={links.projects.cs4300.assignments[2]} {...newTab}>Assignment 5: DNA Model – Lights</a>
+                <ul>
+                  <li>Camera modes:
+                    <ul>
+                      <li>Press the <code>1</code> key to activate orbit mode. Use the left and right arrow keys to orbit around the model.</li>
+                      <li>Press the <code>2</code> key to activate survey mode. The camera will move around the scene on its own to survey the models.</li>
+                      <li>Press the <code>3</code> key to activate first person mode. The camera is fixed to the back of the quadcopter as it flies around the scene.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href={links.projects.cs4300.assignments[3]} {...newTab}>Assignment 6: DNA Model – Textures and Cel Shading</a>
+                <ul>
+                  <li>Camera modes:
+                    <ul>
+                      <li>Press the <code>1</code> key to activate orbit mode. Use the left and right arrow keys to orbit around the model.</li>
+                      <li>Press the <code>2</code> key to activate survey mode. The camera will move around the scene on its own to survey the models.</li>
+                      <li>Press the <code>3</code> key to activate first person mode. The camera is fixed to the back of the quadcopter as it flies around the scene.</li>
+                    </ul>
+                  </li>
+                  <li>Shading Modes:
+                    <ul>
+                      <li>Press the <code>s</code> key to switch between plastic/texture shading and Cel shading.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br />
 
         {/*<header className="above"> <h2> Contact: </h2> </header>*/}
-        <br />
 
-        <div className="mt-5 d-flex justify-content-center separator">
-          {/*<a href="https://www.instagram.com/lonisballington/" target="_blank" rel="noopener noreferrer" className="col d-flex justify-content-center align-items-center">*/}
-          {/*  <i className="bi-instagram" />*/}
-          {/*</a>*/}
-          {/*<a href="https://www.facebook.com/leo.ntel.1/" target="_blank" rel="noopener noreferrer" className="col d-flex justify-content-center align-items-center">*/}
-          {/*  <i className="bi-facebook" />*/}
-          {/*</a>*/}
-          <a href="https://www.linkedin.com/in/leonid-belyi/" target="_blank" rel="noopener noreferrer" className="col d-flex justify-content-center align-items-center">
-            <i className="bi-linkedin" />
-          </a>
-          <a href="https://github.com/LeoTheMighty" target="_blank" rel="noopener noreferrer" className="col d-flex justify-content-center align-items-center">
-            <i className="bi-github" />
-          </a>
-        </div>
-
-        {/*<div className="resume-frame">*/}
-          {/*<embed*/}
-          {/*  src="https://docs.google.com/document/d/1-5_suPfVU-tlXHdqm9aSljvfWqdEhXHQ7Cm8MvAmnNE/edit?usp=sharing"*/}
-          {/*  width="100%" height="1000px"*/}
-          {/*/>*/}
-          {/*<iframe*/}
-          {/*  title="resume"*/}
-          {/*  src={`${Resume}#view=fitH`}*/}
-          {/*  height="100%"*/}
-          {/*  width="100%"*/}
-          {/*/>*/}
-        {/*</div>*/}
-        <br />
         {/*<header ref={profileRef}> <h2> About Me </h2> </header>*/}
         {/*<h3> ...Working on it. </h3>*/}
         {/*<br />*/}
@@ -216,6 +256,22 @@ const App = () => {
         {/*<h3> ...Working on it. </h3>*/}
         {/*<br />*/}
 
+        <br />
+
+        <div className="mt-5 d-flex justify-content-center separator">
+          {/*<a href={links.instagram} {...newTab} className="col d-flex justify-content-center align-items-center">*/}
+          {/*  <i className="bi-instagram" />*/}
+          {/*</a>*/}
+          {/*<a href={links.facebook} {...newTab} className="col d-flex justify-content-center align-items-center">*/}
+          {/*  <i className="bi-facebook" />*/}
+          {/*</a>*/}
+          <a href={links.linkedin} {...newTab} className="col d-flex justify-content-center align-items-center">
+            <i className="bi-linkedin" />
+          </a>
+          <a href={links.github} {...newTab} className="col d-flex justify-content-center align-items-center">
+            <i className="bi-github" />
+          </a>
+        </div>
       </div>
     </div>
   );
