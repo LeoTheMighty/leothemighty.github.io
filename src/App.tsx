@@ -162,17 +162,39 @@ const App = () => {
         <header className="above" ref={resumeRef}> <h2> Resume </h2> </header>
         {/*<iframe id="iframepdf" src="files/resume.pdf" />*/}
         {/*<embed src={'files/resume.pdf'} type="application/pdf" />*/}
-        <iframe
-          className="resume-frame above"
-          title="resume"
-          src={`${Resume}#view=FitV&toolbar=0&navpanes=0`}
-          height="100%"
-          width="80%"
-        >
-          <p> Your browser does not support this </p>
-        </iframe>
+          <iframe
+            className="resume-frame above"
+            title="resume"
+            src={`${Resume}#view=FitV&toolbar=0&navpanes=0`}
+            height="100%"
+            width="80%"
+          >
+            <p> Your browser does not support this </p>
+          </iframe>
+        <br />
+          <a target="_blank" rel="noopener noreferrer" href={Resume}>
+            <button className="print-button btn btn-danger">
+              Click here to view and print
+            </button>
+          </a>
 
-        <header className="above"> <h2> Contact: </h2> </header>
+        {/*<header className="above"> <h2> Contact: </h2> </header>*/}
+        <br />
+
+        <div className="mt-5 d-flex justify-content-center separator">
+          {/*<a href="https://www.instagram.com/lonisballington/" target="_blank" rel="noopener noreferrer" className="col d-flex justify-content-center align-items-center">*/}
+          {/*  <i className="bi-instagram" />*/}
+          {/*</a>*/}
+          {/*<a href="https://www.facebook.com/leo.ntel.1/" target="_blank" rel="noopener noreferrer" className="col d-flex justify-content-center align-items-center">*/}
+          {/*  <i className="bi-facebook" />*/}
+          {/*</a>*/}
+          <a href="https://www.linkedin.com/in/leonid-belyi/" target="_blank" rel="noopener noreferrer" className="col d-flex justify-content-center align-items-center">
+            <i className="bi-linkedin" />
+          </a>
+          <a href="https://github.com/LeoTheMighty" target="_blank" rel="noopener noreferrer" className="col d-flex justify-content-center align-items-center">
+            <i className="bi-github" />
+          </a>
+        </div>
 
         {/*<div className="resume-frame">*/}
           {/*<embed*/}
@@ -193,6 +215,7 @@ const App = () => {
         {/*<header ref={aocRef}> <h2> AOC Solutions </h2> </header>*/}
         {/*<h3> ...Working on it. </h3>*/}
         {/*<br />*/}
+
       </div>
     </div>
   );

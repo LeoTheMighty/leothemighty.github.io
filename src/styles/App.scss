@@ -189,11 +189,30 @@ code {
   font-size: 1rem;
 }
 
+.bi-facebook, .bi-linkedin, .bi-instagram, .bi-github {
+  color: $primary-font-color;
+  font-size: 2rem;
+
+  &:hover {
+    color: $secondary-font-color;
+  }
+}
+
 .bi {
   font-size: 2rem;
   color: $ternary-font-color;
 }
 
 .bi-lit {
+  color: $primary-font-color;
+}
+
+.print-button {
+  position: relative;
+  background: $primary-gradient;
+  border-color: $ternary-font-color;
+  border-width: thin;
+  margin-top: 4;
+  z-index: 100;
   color: $primary-font-color;
 }
