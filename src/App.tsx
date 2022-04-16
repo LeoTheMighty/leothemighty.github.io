@@ -91,7 +91,7 @@ const App = () => {
           <a onClick={() => scrollTo('gallery')} className="col d-flex justify-content-center align-items-center"> Photos </a>
           <a onClick={() => scrollTo('resume')} className="col d-flex justify-content-center align-items-center"> Resume </a>
           <a onClick={() => scrollTo('projects')} className="col d-flex justify-content-center align-items-center"> Projects </a>
-          <a onClick={() => scrollTo('profile')} className="col d-flex justify-content-center align-items-center"> About Me </a>
+          <a href={links.source} {...newTab} className="col d-flex justify-content-center align-items-center"> Source </a>
         </div>
         <div className="separator" />
         <header ref={galleryRef}> <h2 className="above"> My Pacific Crest Trail Journey </h2> </header>
@@ -100,26 +100,9 @@ const App = () => {
         {/*<header className="above" ref={profileRef}> <h2> About Me </h2> </header>*/}
         <Profile />
         <br />
-        {/*<header className="above" ref={resumeRef}> <h2> Resume </h2> </header>*/}
-        {/*<iframe id="iframepdf" src="files/resume.pdf" />*/}
-        {/*<embed src={'files/resume.pdf'} type="application/pdf" />*/}
-        <Resume />
-        {/*<iframe*/}
-        {/*  className="resume-frame above"*/}
-        {/*  title="resume"*/}
-        {/*  src={`${links.resume}#view=FitV&toolbar=0&navpanes=0`}*/}
-        {/*  height="100%"*/}
-        {/*  width="80%"*/}
-        {/*>*/}
-        {/*  <p> Your browser does not support this </p>*/}
-        {/*</iframe>*/}
-        {/*<br />*/}
-        {/*<a target="_blank" rel="noopener noreferrer" href={links.resume}>*/}
-        {/*  <button className="print-button btn btn-danger">*/}
-        {/*    Click here to view and print*/}
-        {/*  </button>*/}
-        {/*</a>*/}
-        {/*<br />*/}
+        <div ref={resumeRef}>
+          <Resume />
+        </div>
         <br />
         <header className="above" ref={projectsRef}> <h2> Projects </h2> </header>
         <Projects />
