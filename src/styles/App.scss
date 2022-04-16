@@ -138,6 +138,7 @@ code {
 }
 
 .above {
+  position: relative;
   z-index: 50;
 }
 
@@ -170,12 +171,17 @@ code {
 
 .resume-frame {
   //width: 100%;
+  position: relative;
   height: 100vw;
 }
 
 .bi-list {
   font-size: 2rem;
   color: $ternary-font-color;
+}
+
+#document {
+  z-index: 50;
 }
 
 .bi-arrow-clockwise {

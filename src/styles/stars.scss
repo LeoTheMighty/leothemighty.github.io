@@ -59,6 +59,7 @@
 
     box-shadow: multiple-box-shadow(200, $ternary-font-color);//0 0 $white, 50vh 100px $white, 150px 250px $white, 0 0 $white, 250px 100px $white, 0 0 $white;
     animation: animStar 90s linear infinite !important;
+
     // -webkit-animation: animStar 150s linear infinite !important;
   }
 }

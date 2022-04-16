@@ -81,7 +81,7 @@ const Gallery = ({ visible }: { visible: boolean }) => {
           </Carousel>
         </div>
       </div>
-      <div> { IMAGES[currentIndex].caption } </div>
+      <div className="above"> { IMAGES[currentIndex].caption } </div>
     </div>
   )
 };

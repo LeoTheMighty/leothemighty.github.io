@@ -1,7 +1,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import 'src/styles/custom';
 
-$blur-radius: 60px;
+$blur-radius: 80px;
 $spread-radius: 100px;
 $blob-radius: 150px;
 $t: $blob-radius;
@@ -16,6 +16,7 @@ $speed: 4;
 @function rand($limit, $u) {
   @return random() * $limit * $u;
 }
+
 
 @function dim ($u, $x) {
   @return ($x * rand(100, $u)) - (50 * $u);
@@ -65,7 +66,49 @@ $speed: 4;
   @return unquote($value)
 }
 
+@function rnd($n) {
+  // make this 0 and $n 0 inclusive
+  @return random($n + 1) - 1
+}
 
+@function getTriangulatedLists() {
+  $number-of-elements: 10;
+  $length: 6;
+
+  $colors: #361e1e, #230000, #150000, #340202;
+
+  //$colors: #00ff2a, blue, yellow;
+  // $colors: #230000, #230000, #150000, rgba(35, 11, 11, 0.71);
+
+  //$color: nth($colors, rnd(length($colors)));
+
+  $color: nth($colors, 1);
+  $xi: rnd(100) - 50;
+  $yi: rnd(100) - 50;
+  $xo: $length * (rnd(100) - 50);
+  $yo: $length * (rnd(100) - 50);
+  $xf: $xi - $xo;
+  $yf: $yi - $yo;
+  $initial: '#{shadow($xf * 1vw, $yf * 1vh, $blur-radius, $spread-radius, $color)}';
+  $inner: '#{shadow($xi * 1vw, $yi * 1vh, $blur-radius, $spread-radius, $color)}';
+  $outer: '#{shadow($xo * 1vw, $yo * 1vh, $blur-radius, $spread-radius, $color)}';
+  @for $i from 2 through $number-of-elements {
+    $color: nth($colors, ($i % length($colors)) + 1);
+
+
+    $xi: rnd(100);
+    $yi: rnd(100);
+    $xo: $length * (rnd(100) - 50);
+    $yo: $length * (rnd(100) - 50);
+    $xf: $xo - $xi;
+    $yf: $yo - $yi;
+    $initial: '#{$initial}, #{shadow($xf * 1vw, $yf * 1vh, $blur-radius, $spread-radius, $color)}';
+    $inner: '#{$inner}, #{shadow($xi * 1vw, $yi * 1vh, $blur-radius, $spread-radius, $color)}';
+    $outer: '#{$outer}, #{shadow($xo * 1vw, $yo * 1vh, $blur-radius, $spread-radius, $color)}';
+  }
+
+  @return [unquote($initial), unquote($inner), unquote($outer)];
+}
 
 #blobs {
   background-color: rgba($blue, 0);
@@ -102,30 +145,87 @@ $speed: 4;
 
 
 
+    $lists: getTriangulatedLists();
+    $initial: nth($lists, 1);
+    box-shadow: $initial;
 
     // box-shadow: multiple-box-shadow(200, $ternary-font-color);//0 0 $white, 50vh 100px $white, 150px 250px $white, 0 0 $white, 250px 100px $white, 0 0 $white;
-    animation: animBlobs 90s linear infinite !important;
+     animation: animBlobs 180s linear infinite !important;
     // -webkit-animation: animStar 150s linear infinite !important;
   }
 }
 
+//$inner:
+//        full-box-box-shadow(5, #361e1e, 2),
+//        full-box-box-shadow(5, #230000, 2),
+//        full-box-box-shadow(15, #150000, 2),
+//        full-box-box-shadow(5, #340202, 2);
+//
+//$initial, $inner, $outer: getTriangulatedLists();
+//
+//@error $initial, '||||||', $inner, '|||||||', $outer;
+//
+//// @debug list.nth($inner, 0);
+//@warn $inner;
+//$third: [1px, 2px, 3px];
+//
+//@each $i in $inner {
+//  $n: 1;
+//  @each $e in $i {
+//    @error $e;
+//    @if $n == 2 {
+//      @error $e;
+//    }
+//
+//    $n: $n + 1;
+//  }
+//}
+//
+//$outer:
+//        full-box-box-shadow(5, #230000, 4),
+//        full-box-box-shadow(5, #230000, 4),
+//        full-box-box-shadow(15, #150000, 4),
+//        full-box-box-shadow(5, rgba(35, 11, 11, 0.71), 4);
+//
+
+
+
 @keyframes animBlobs {
   // transform: translate(0, 0px);
-  from {
-    box-shadow:
-            full-box-box-shadow(5, #361e1e, 2),
-            full-box-box-shadow(5, #230000, 2),
-            full-box-box-shadow(15, #150000, 2),
-            full-box-box-shadow(5, #340202, 2);
+  $lists: getTriangulatedLists();
+  $initial: nth($lists, 1);
+  $inner: nth($lists, 2);
+  $outer: nth($lists, 3);
+
+  0% {
+    box-shadow: $initial, $inner, $outer;
   }
-  to {
-    //box-shadow: full-box-box-shadow(20, $primary-gradient);
-    //box-shadow: multiple-outer-box-shadow(300, $ternary-font-color);
-    box-shadow:
-            full-box-box-shadow(5, #230000, 4),
-            full-box-box-shadow(5, #230000, 4),
-            full-box-box-shadow(15, #150000, 4),
-            full-box-box-shadow(5, rgba(35, 11, 11, 0.71), 4);
+
+  // lmao..... i know
+  25% {
+    box-shadow: $inner, $outer, $initial;
   }
+  //50% {
+  //  box-shadow: $inner, $outer, $initial;
+  //}
+
+  75% {
+    box-shadow: $outer, $initial, $inner;
+  }
+
+  100% {
+    box-shadow: $initial, $inner, $outer;
+  }
+
+
+  //from {
+  //  box-shadow: $initial, $inner, $outer;
+  //
+  //}
+  //to {
+  //  //box-shadow: full-box-box-shadow(20, $primary-gradient);
+  //  //box-shadow: multiple-outer-box-shadow(300, $ternary-font-color);
+  //  box-shadow: $outer, $inner;
+  //}
 }
 

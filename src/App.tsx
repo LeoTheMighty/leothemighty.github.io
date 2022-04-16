@@ -5,14 +5,13 @@ import Gallery from "./Gallery";
 import useOnScreen from "./hooks/UseOnScreen";
 import { chooseRandom } from './helper';
 import Resume from './files/resume.pdf';
-// import Stars from './Stars';
 
 const DESCRIPTORS = [
   "Heartthrob",
   "Wannabe Chef",
   "Spotify Playlist Connoisseur",
   "Chaotic Good",
-  // "Libra by sign, Pisces by Nature",
+  "Libra by Sign, Leo by Name",
   "Struggling Sweatshirt Addict",
   "Wrote one guitar song and won't shut up about it",
   "Wishes Yandhi was released",
@@ -28,37 +27,34 @@ const DESCRIPTORS = [
   "Backend engineer who is trying out frontend",
   "Never scored less than a 5 on an AP exam",
   "Built Different",
-  // "Pushing P",
   "Real imposter who thinks they have imposter syndrome",
   "Spoiled by 100% Pure Kona Coffee",
-  ""
+  "Ultimate Sugar Tooth",
+  "Has made a grown man cry by making him cinnamon buns from scratch",
+  "Whistles like a monster",
+  "Got a $100 tip at a bar from a super drunk guy on new year's eve because of a trombone solo played so well",
+  "Doesn't get lost in minecraft",
+  "Listens to Blonde on repeat",
+  "Has run a sub-2-hour half marathon ONCE",
+  "went on a small (2653 miles) stroll the day after graduation",
+  "Has never heard his last name correctly pronounced the first time",
+  "Git wizard in training",
+  "Middle child",
+  "Northeatern Unviersity's Khoury College of Computer Science Summa Cum Laude Graduate; Class of 2021",
+  "Took him 8 hours to code these stars :(",
+  "Discreetly Questions Authority",
+  "Existential Crisis Aficionado",
+  "Don't click that button below me you may never see me again :(",
 ];
-const getRandomDescriptor = (): string => chooseRandom(DESCRIPTORS);
 
-// const tryFetch = (url: string) => {
-//   const options = {
-//     method: 'POST',
-//     headers: {
-//       "Access-Control-Request-Headers": "Content-Type, Authorization",
-//       "Access-Control-Allow-Origin": "https://www.icloud.com",
-//       "Host": "p45-sharedstreams.icloud.com",
-//       "Origin": "https://www.icloud.com",
-//       "Referer": "https://www.icloud.com/"
-//     },
-//   };
-//   fetch(url, options)
-//     .then((response) => {
-//       console.log(response);
-//     })
-//     .catch((error) => {
-//       console.error(error);
-//     });
-// }
+console.log(DESCRIPTORS.length);
+
+const getRandomDescriptor = (): string => chooseRandom(DESCRIPTORS);
 
 const App = () => {
   const [descriptor, setDescriptor] = useState<string>(getRandomDescriptor());
-  const [starsOn, setStarsOn] = useState(false);
-  const [blobsOn, setBlobsOn] = useState(true);
+  const [starsOn, setStarsOn] = useState(true);
+  const [blobsOn, setBlobsOn] = useState(false);
 
   const galleryRef = useRef<null | HTMLDivElement>(null);
   const projectsRef = useRef<null | HTMLDivElement>(null);
@@ -157,17 +153,17 @@ const App = () => {
           <a onClick={() => scrollTo('profile')} className="col d-flex justify-content-center align-items-center"> About Me </a>
         </div>
         <div className="separator" />
-        <header className="above" ref={galleryRef}> <h2> My Pacific Crest Trail Journey </h2> </header>
+        <header ref={galleryRef}> <h2 className="above"> My Pacific Crest Trail Journey </h2> </header>
         <Gallery visible={galleryVisible}/>
         <br />
         {/*<header ref={projectsRef}> <h2> Projects </h2> </header>*/}
         {/*<h3> ...Working on it. </h3>*/}
         {/*<br />*/}
-        <header ref={resumeRef}> <h2> Resume </h2> </header>
+        <header className="above" ref={resumeRef}> <h2> Resume </h2> </header>
         {/*<iframe id="iframepdf" src="files/resume.pdf" />*/}
         {/*<embed src={'files/resume.pdf'} type="application/pdf" />*/}
         <iframe
-          className="resume-frame"
+          className="resume-frame above"
           title="resume"
           src={`${Resume}#view=FitV&toolbar=0&navpanes=0`}
           height="100%"
@@ -175,6 +171,9 @@ const App = () => {
         >
           <p> Your browser does not support this </p>
         </iframe>
+
+        <header className="above"> <h2> Contact: </h2> </header>
+
         {/*<div className="resume-frame">*/}
           {/*<embed*/}
           {/*  src="https://docs.google.com/document/d/1-5_suPfVU-tlXHdqm9aSljvfWqdEhXHQ7Cm8MvAmnNE/edit?usp=sharing"*/}
