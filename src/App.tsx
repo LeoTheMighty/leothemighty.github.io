@@ -94,23 +94,18 @@ const App = () => {
           <a href={links.source} {...newTab} className="col d-flex justify-content-center align-items-center"> Source </a>
         </div>
         <div className="separator" />
-        <header ref={galleryRef}> <h2 className="above"> My Pacific Crest Trail Journey </h2> </header>
-        <Gallery visible={galleryVisible}/>
-        <br />
-        {/*<header className="above" ref={profileRef}> <h2> About Me </h2> </header>*/}
         <Profile />
         <br />
         <div ref={resumeRef}>
           <Resume />
         </div>
         <br />
-        <header className="above" ref={projectsRef}> <h2> Projects </h2> </header>
-        <Projects />
+        <header ref={galleryRef}> <h2 className="above"> My Pacific Crest Trail Journey </h2> </header>
+        <Gallery visible={galleryVisible}/>
         <br />
-
-        {/*<header ref={aocRef}> <h2> AOC Solutions </h2> </header>*/}
-        {/*<h3> ...Working on it. </h3>*/}
-        {/*<br />*/}
+        {/*<header className="above" ref={projectsRef}> <h2> Projects </h2> </header>*/}
+        <div ref={projectsRef} />
+        <Projects />
 
         <br />
 
