@@ -18,7 +18,7 @@ type Props = {
 const Project = (props: Props) => {
   const { title, subtitle, source, link, preview, previewAlt, previewSubtitle, reverse, children } = props;
 
-  const smallComponent = <div className="d-block d-md-none">
+  const smallComponent = <div key={0} className="d-block d-md-none">
     <h3><a href={link} {...newTab}>
       { title }
     </a></h3>
@@ -30,14 +30,14 @@ const Project = (props: Props) => {
     <i> { previewSubtitle } </i>
   </div>;
 
-  const previewComponent = <div className="col d-none d-md-block">
+  const previewComponent = <div key={1} className="col d-none d-md-block">
     <a href={link} {...newTab}>
       <img className="project-preview m-2" src={preview} alt={previewAlt} />
     </a>
     <p> {previewSubtitle} </p>
   </div>;
 
-  const descriptionComponent = <div className="col-lg above d-none d-md-block">
+  const descriptionComponent = <div key={2} className="col-lg above d-none d-md-block">
     <h3><a href={link} {...newTab}>
       { title }
     </a></h3>
