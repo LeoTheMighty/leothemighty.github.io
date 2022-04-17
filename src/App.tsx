@@ -46,8 +46,8 @@ const App = () => {
       { starsOn && (<div id="stars"><div /></div>) }
       { blobsOn && (<div id="blobs"><div /></div>) }
       <div className="App">
-        <div className="d-flex separator">
-          <div className="col d-flex justify-content-start">
+        <div className="d-flex separator float-start">
+          <div className="col d-flex justify-content-start fixed-top">
             <button
               type="button"
               className="above pr-1 btn shadow-none"
