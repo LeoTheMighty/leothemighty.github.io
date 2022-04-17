@@ -32,6 +32,7 @@ $body-bg: $background-color;
 //$primary-gradient: linear-gradient(338deg, rgba($background-color, 1), rgba($background-color, 1), rgba($gradient-to, 1));
 //$primary-gradient: repeating-linear-gradient(338deg, rgba($background-color, 1), rgba($background-color, 1), rgba($gradient-to, 1) 1vh);
 $primary-gradient: repeating-linear-gradient(338deg, rgba($gradient-to, 1), rgba($background-color, 1), rgba($gradient-to, 1) 200vh);
+$primary-gradient-transparent: repeating-linear-gradient(338deg, rgba($gradient-to, 0.5), rgba($background-color, 0.5), rgba($gradient-to, 0.5) 200vh);
 
 // background-color: #100000;
 

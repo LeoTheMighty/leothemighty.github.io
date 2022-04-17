@@ -5,9 +5,9 @@ import { newTab } from './helper';
 
 const Profile = () => (
   <>
-    <div className="m-3 d-flex justify-content-center">
+    <div className="profile-container m-3 d-flex justify-content-center">
       <img className="profile-cover" src={links.profile} alt="profile cover" />
-      <div className="profile">
+      <div className="profile above">
         <div className="col">
           <img className="above profile-picture" src={links.me} alt="profile" />
           {/*<a href={link} {...newTab}>*/}
@@ -23,7 +23,7 @@ const Profile = () => (
         </div>
         <div className="col above profile-description">
           <h1> Leonid Belyi </h1>
-          <i> My actual legal name</i>
+          <i> My legal name</i>
           <p className="mt-4 d-none d-lg-block">
             I'm a Software Developer based out of San Diego at the moment. I'm trying to learn
             as much as possible so that I can go out and do something incredible one day.

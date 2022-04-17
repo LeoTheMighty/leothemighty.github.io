@@ -108,9 +108,6 @@ const App = () => {
         <Projects />
         <br />
 
-        {/*<header ref={profileRef}> <h2> About Me </h2> </header>*/}
-        {/*<h3> ...Working on it. </h3>*/}
-        {/*<br />*/}
         {/*<header ref={aocRef}> <h2> AOC Solutions </h2> </header>*/}
         {/*<h3> ...Working on it. </h3>*/}
         {/*<br />*/}

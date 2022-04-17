@@ -26,6 +26,7 @@ const Project = (props: Props) => {
     <a href={link} {...newTab}>
       <img className="project-preview-fill m-2" src={preview} alt={previewAlt} />
     </a>
+    <br />
     <i> { previewSubtitle } </i>
   </div>;
 
@@ -49,7 +50,7 @@ const Project = (props: Props) => {
   </div>;
 
   return (
-    <div className="mt-5 d-flex justify-content-center">
+    <div className="mt-5 d-flex justify-content-center above">
       { reverse ?
         [smallComponent, descriptionComponent, previewComponent] :
         [smallComponent, previewComponent, descriptionComponent]

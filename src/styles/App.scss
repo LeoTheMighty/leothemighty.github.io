@@ -211,7 +211,7 @@ code {
 }
 
 .bi {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: $ternary-font-color;
 }
 
@@ -238,11 +238,21 @@ code {
   max-height: 32vw;
 }
 
+//.profile-container {
+//  background: $primary-gradient;
+//  border-radius: 1vw;
+//  padding: 2rem;
+//  opacity: 85%;
+//}
+
 .profile {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 24vw;
+  background: $primary-gradient-transparent;
+  border-radius: 1vw;
+  padding: 2rem;
 }
 
 .profile-picture {
@@ -251,11 +261,10 @@ code {
 }
 
 .profile-description {
-  background: $primary-gradient;
-  border-radius: 1vw;
+  //background: $primary-gradient;
+  //border-radius: 1vw;
   max-width: 50%;
-  padding: 2rem;
-  opacity: 85%;
+  //padding: 2rem;
 }
 
 .project-preview {
