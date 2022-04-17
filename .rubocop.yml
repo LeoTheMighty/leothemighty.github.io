@@ -1,0 +1,147 @@
+require:
+  - rubocop-graphql
+  - rubocop-performance
+  - rubocop-rails
+  - ./linters/mycase_cops/assert_with_non_string_message_argument.rb
+  - ./linters/mycase_cops/remove_deprecations.rb
+  - ./linters/mycase_cops/shoryuken_job_enqueuer.rb
+  - ./linters/mycase_cops/shoulda_context_and_test_names.rb
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7.5
+  TargetRailsVersion: 5.2
+  Exclude:
+    - 'config/puma.rb'
+    - 'db/schema.rb'
+    - 'db/seeds.rb'
+    - 'lib/fast_pending_migration_backport.rb'
+    - 'lib/parallel_testing_backport.rb'
+    - 'vendor/cache/**/*'
+
+Rails:
+  Enabled: true
+  Exclude:
+    - script/ci/**/*
+
+# Example configuration for the RemoveDeprecations custom cop:
+# MyCaseCops/RemoveDeprecations:
+#   Enabled: true
+#   DeprecatedMethods:
+#     FeatureFlag.enabled_for_user?: 'Feature.enabled_for_user?'
+#     FeatureFlag.enabled_for_firm?: 'Feature.enabled_for_firm?'
+#     FeatureFlag.enabled_for_application?: 'Feature.enabled_for_application?'
+#     FeatureFlag.enable!: 'Feature.enable!'
+#     FeatureFlag.enable_globally!: 'Feature.enable_globally!'
+#     FeatureFlag.disable!: 'Feature.disable!'
+#     FeatureFlag.disable_globally!: 'Feature.disable_globally!'
+
+MyCaseCops/ShouldaContextAndTestNames:
+  Include:
+    - 'test/**/*.rb'
+
+# The settings below are those that differ from rubocop's default configuration.
+
+# Set max line length to 100
+Layout/LineLength:
+  Max: 100
+  Enabled: true
+
+
+# This cop does not fare well with our increased method length. See http://c2.com/cgi/wiki?AbcMetric
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'test/**/*.rb'
+    - 'lib/tasks/**/*.rake'
+    - 'config/routes.rb'
+
+# ClassLength, ugh
+Metrics/ClassLength:
+  Enabled: false
+
+# Set max method length to 100
+Metrics/MethodLength:
+  Max: 100
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+# Renaming `has_something?` to `something?` obfuscates whether it is a 'is-a'
+# or a 'has-a' relationship.
+Naming/PredicateName:
+  Enabled: false
+
+Rails/DynamicFindBy:
+  Whitelist:
+    - find_by_client_id
+
+# refute methods are native to Minitest which means we can use them in projects that don't
+# use rails as well as rails projects. Thus, we should allow the use of refute assertions even in
+# rails projects to allow us to write more portable assertions and reduce the cognitive load of
+# developers who switch between rails and non-rails projects.
+Rails/RefuteMethods:
+  Enabled: false
+
+# Because only Paulus cares about documentation
+Style/Documentation:
+  Enabled: false
+
+# If a value can be `true`, `false`, or `nil`, using double negation (!!) is the most succinct way
+# to coerce it to a boolean.
+Style/DoubleNegation:
+  Enabled: false
+
+Style/FormatStringToken:
+  Exclude:
+    - 'config/routes.rb'
+
+# Let's not complain about this until we decide to opt in to it
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# This cop is too aggresive in claiming a guard clause should be used
+Style/GuardClause:
+  Enabled: false
+
+# Avoid chaining a method call on a do...end block.
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
+# Prefer keyword arguments over option hashes
+Style/OptionHash:
+  Enabled: true
+
+# rescue in modifier form is very idiomatic and useful in certain situations!
+Style/RescueModifier:
+  Enabled: false
+
+# Otherwise you get a warning if you do [:paulus, :prints, :paddycakes]
+Style/SymbolArray:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  # If `comma`, the cop requires a comma after the last item in an array or
+  # hash, but only when each item is on its own line.
+  # If `consistent_comma`, the cop requires a comma after the last item of all
+  # non-empty array and hash literals.
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  # If `comma`, the cop requires a comma after the last item in an array or
+  # hash, but only when each item is on its own line.
+  # If `consistent_comma`, the cop requires a comma after the last item of all
+  # non-empty array and hash literals.
+  EnforcedStyleForMultiline: comma
+
+# Otherwise you get a warning if you do ['Paulus', 'Productive', 'Very']
+Style/WordArray:
+  Enabled: false
