@@ -42,7 +42,7 @@ const getRandomNImages = (n: number, keyStart: number = 0): Image[] => {
     images.push({
       image: (
         <Carousel.Item key={i + keyStart}>
-          <img src={require(`./images/pct/${e}.jpg`)} className="d-block w-100" alt={`${i}.jpg`} />
+          <img src={require(`../images/pct/${e}.jpg`)} className="d-block w-100" alt={`${i}.jpg`} />
         </Carousel.Item>
       ),
       caption: captions[e in captions ? e : 0],
