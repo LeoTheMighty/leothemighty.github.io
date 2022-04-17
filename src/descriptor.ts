@@ -39,6 +39,18 @@ const DESCRIPTORS = [
   "Discreetly Questions Authority",
   "Existential Crisis Aficionado",
   "Don't click that button below me you may never see me again :(",
+  "Blaster of music",
+  "Owner of an incredibly fuel-efficient steel 2019 Hyundai Ioniq",
+  "Can snowboard well enough to appreciate a powder day",
+  "Almost always plays sweeper in a soccer game",
+  "Surprisingly good at ping pong",
+  "Ex-ex-entrepreneur",
+  "Strives to have as few notifications as possible",
+  "Misses Boston",
+  "Climate Change Combatant",
+  "Concerned about capitalism",
+  "Has grown the KPIs of his own life quarter-over-quarter",
+  "Absolutely crushes candles",
 ];
 
 const getRandomDescriptor = (): string => chooseRandom(DESCRIPTORS);

@@ -1,5 +1,5 @@
-import links from './links';
-import { newTab } from './helper';
+import links from '../links';
+import { newTab } from '../helper';
 import React from 'react';
 
 type Props = {

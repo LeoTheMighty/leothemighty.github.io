@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import { random } from './helper';
-import captions from './captions';
+import { random } from '../helper';
+import captions from '../captions';
 
 const INITIAL_PHOTOS = 5;
 const NUM_FETCH_PHOTOS = 10;

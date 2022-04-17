@@ -1,7 +1,7 @@
 import React from 'react';
 
-import links from './links';
-import { newTab } from './helper';
+import links from '../links';
+import { newTab } from '../helper';
 
 const Profile = () => (
   <>

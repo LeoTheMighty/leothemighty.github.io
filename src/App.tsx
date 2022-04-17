@@ -1,13 +1,13 @@
 import React, { useRef, useState } from 'react';
 
 import './styles/App.scss';
-import Gallery from "./Gallery";
+import Gallery from "./sections/Gallery";
 import useOnScreen from "./hooks/UseOnScreen";
 import { newTab } from './helper';
 import { getRandomDescriptor } from './descriptor';
 import links from './links';
-import Projects from './Projects';
-import Profile from './Profile';
+import Projects from './sections/Projects';
+import Profile from './sections/Profile';
 import Resume from './sections/Resume';
 
 const App = () => {

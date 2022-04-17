@@ -1,6 +1,6 @@
 import Project from './Project';
-import links from './links';
-import { newTab } from './helper';
+import links from '../links';
+import { newTab } from '../helper';
 import React from 'react';
 
 const Projects = () => (
