@@ -5,7 +5,6 @@ import homePreview from './images/homepreview.png';
 import me from './images/me.png';
 import profile from './images/profilecover.png';
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   projects: {
     cs4300: {
