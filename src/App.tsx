@@ -63,11 +63,11 @@ const App = () => {
               <i className={"bi bi-stars" + (starsOn ? " bi-lit" : "")} />
             </button>
           </div>
-          <div className="col d-flex justify-content-end">
-            <button type="button" className="above pr-1 btn shadow-none">
-              <i className="bi-list" />
-            </button>
-          </div>
+          {/*<div className="col d-flex justify-content-end">*/}
+          {/*  <button type="button" className="above pr-1 btn shadow-none">*/}
+          {/*    <i className="bi-list" />*/}
+          {/*  </button>*/}
+          {/*</div>*/}
         </div>
         <header className="intro">
           <h1 className="above"> Leo Belyi </h1>

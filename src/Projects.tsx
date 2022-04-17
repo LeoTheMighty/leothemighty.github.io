@@ -77,17 +77,17 @@ const Projects = () => (
       <ul>
         <li> This was one of my personal favorite projects I did on the side </li>
         <li> This concept is based around the concept of homogeneity: </li>
-        <ul>
-          <li> I actually have a theory that a part of the reason why Americans have such a problem with obesity/health in general is because of the Diet culture we have </li>
-          <li> Our culture is very much one that values perfection in action and does grand gestures on the regular.</li>
-          <li> For instance, it's a very popular idea to just "cut out" all of something, like sugar for instance.</li>
-          <li> Now this is all well and good... if one devotes their life to it. But in reality, this is not a sustainable diet and the individual will cave eventually and go onto the "Post Diet Binge".</li>
-          <ul><li> Post Diet Binges are always the most intense because of human nature where one will think of something even more when that thing appears to be unavailable to them.</li></ul>
-          <li> This binge will counteract, and probably out-do any of the good that the diet would bring them.</li>
-          <li> Because of this, people in diet culture run the risk of entering this trampoline diet, going back and forth between diets and binges, never letting their bodies get used to their diet.</li>
-          <li> Now this is the biggest deal because the human body is one that THRIVES on homogeneity, even if something is non-ideal (take for instance a sleep schedule), as long as it is at least on a consistent schedule, the body will try its best to get used to it. Therefore, the whole ideas of constant diets and binges are <b>incredibly antithetical</b> to this process as a whole.</li>
-        </ul>
-        <li> This is why the Pillars app came to be; it is an admission that "Consistency is Key" and that we want to make sure that whatever goals/habits we have, they remain consistent to allow our body to adjust and thrive in these conditions.</li>
+        {/*<ul>*/}
+        {/*  <li> I actually have a theory that a part of the reason why Americans have such a problem with obesity/health in general is because of the Diet culture we have </li>*/}
+        {/*  <li> Our culture is very much one that values perfection in action and does grand gestures on the regular.</li>*/}
+        {/*  <li> For instance, it's a very popular idea to just "cut out" all of something, like sugar for instance.</li>*/}
+        {/*  <li> Now this is all well and good... if one devotes their life to it. But in reality, this is not a sustainable diet and the individual will cave eventually and go onto the "Post Diet Binge".</li>*/}
+        {/*  <ul><li> Post Diet Binges are always the most intense because of human nature where one will think of something even more when that thing appears to be unavailable to them.</li></ul>*/}
+        {/*  <li> This binge will counteract, and probably out-do any of the good that the diet would bring them.</li>*/}
+        {/*  <li> Because of this, people in diet culture run the risk of entering this trampoline diet, going back and forth between diets and binges, never letting their bodies get used to their diet.</li>*/}
+        {/*  <li> Now this is the biggest deal because the human body is one that THRIVES on homogeneity, even if something is non-ideal (take for instance a sleep schedule), as long as it is at least on a consistent schedule, the body will try its best to get used to it. Therefore, the whole ideas of constant diets and binges are <b>incredibly antithetical</b> to this process as a whole.</li>*/}
+        {/*</ul>*/}
+        <li> it's a claim that "Consistency is Key" and that we want to make sure that whatever goals/habits we have, they remain consistent.</li>
         <li> It is a simple app where you customize your "Pillars" of your days (aka what you want to do daily) and then you check them off as you do them. The UI then shows you your progress and how tall/consistent each Pillar is and how much you want to focus on them.</li>
       </ul>
     </Project>
