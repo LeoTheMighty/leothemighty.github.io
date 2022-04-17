@@ -72,7 +72,7 @@ const Gallery = ({ visible }: { visible: boolean }) => {
       <div className="d-flex justify-content-center">
         <div className="gallery">
           <Carousel
-            interval={visible ? 5000 : null}
+            interval={null}
             fade
             activeIndex={currentIndex}
             onSelect={(index) => setCurrentIndex(index)}
