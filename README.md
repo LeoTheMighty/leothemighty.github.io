@@ -12,29 +12,47 @@ one of these days.
 
 # TODO:
 - [x] MAKE THE STARS
-- [ ] Resume section
+- [x] Resume section
   - [x] PDF Viewer? iframe for google's own?
-  - [ ] But make it work for mobile 
+  - [x] But make it work for mobile (close enough)
 - [ ] Projects:
+  - [ ] Arduino Lights projects with screenshots?
   - [ ] AOC Solution Viewer + Source Code
   - [ ] .dotfiles would be cool
-  - [ ] Pillars link!!! https://leothemighty.github.io/Pillars
-  - [ ] Old shitty website link lol https://leothemighty.github.io/home
-  - [ ] ~~ Spotify Runner (i bet you could run a python script) ~~
+  - [x] Pillars link!!! https://leothemighty.github.io/Pillars
+  - [x] Old shitty website link lol https://leothemighty.github.io/home
+  - [ ] Spotify Library Viewer using Python script to statically load data
+    - [ ] Show my favorite albums playlist
+      - [ ] Sort by most listened to albums
+    - [ ] Most Listened to total section
+      - [ ] Albums
+      - [ ] Artists
+      - [ ] Songs
+      - [ ] Playlists
+      - [ ] Time sections
+        - [ ] Of All Time
+        - [ ] This Year
+        - [ ] This Month
+        - [ ] This Week
+    - Different Views for the songs/albums/artists (like Mac OS X finder)
+      - Block grid
+      - Line by line
+    - Do a "Your" section to compare yourself to me? lol (seems like it should be its own app entirely at that point)
+  - [x] ~~ Spotify Runner (i bet you could run a python script) ~~
       - [ ] rip nope, but would give me a chance to write another one!
       - [ ] or you could put it on AWS Lambda even :o
   - [ ] PCT Permit Checker was really cool!!
-  - [ ] Any of the C++ games from way back in the day worth trying?
-  - [ ] Computer Graphics final project would be really cool actually
+  - [ ] Any of the C++ games from way back in the day worth trying? (Hard to display though)
+  - [x] Computer Graphics final project would be really cool actually
   - [ ] Instagram Fame (if I can actually make it)
   - [ ] Github Statistics Viewer? (that's kinda cheesy)
-- [ ] About Me:
-  - [ ] Picture of me for sure.
-- [ ] PCT Section:
+- [x] About Me:
+  - [x] Picture of me for sure.
+- [x] PCT Section:
   - [x] Add a map of captions?
-  - [ ] new folder and if the text file exists in directory display caption, else display OP line
-- [ ] Contact section
-  - [ ] Email
-  - [ ] Phone Number? yikes
-  - [ ] Address? bro ?!
-  - [ ] I guess Linkedin, Facebook, and Instagram make sense here too.
+  - [x] new folder and if the text file exists in directory display caption, else display OP line
+- [x] Contact section
+  - [x] Email
+  - [ ] ~~ Phone Number? yikes ~~
+  - [ ] ~~ Address? bro ?! ~~
+  - [x] I guess Linkedin, Facebook, and Instagram make sense here too.

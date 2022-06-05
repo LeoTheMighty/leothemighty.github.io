@@ -27,11 +27,13 @@ $secondary-color: #5909af;
 
 $background-color: #0a0000;
 $gradient-to: #3b0019;
+$dark-gradient-to: #280009;
 $body-bg: $background-color;
 
 //$primary-gradient: linear-gradient(338deg, rgba($background-color, 1), rgba($background-color, 1), rgba($gradient-to, 1));
 //$primary-gradient: repeating-linear-gradient(338deg, rgba($background-color, 1), rgba($background-color, 1), rgba($gradient-to, 1) 1vh);
 $primary-gradient: repeating-linear-gradient(338deg, rgba($gradient-to, 1), rgba($background-color, 1), rgba($gradient-to, 1) 200vh);
+$dark-primary-gradient: repeating-linear-gradient(338deg, rgba($dark-gradient-to, 1), rgba($background-color, 1), rgba($dark-gradient-to, 1) 200vh);
 $primary-gradient-transparent: repeating-linear-gradient(338deg, rgba($gradient-to, 0.5), rgba($background-color, 0.5), rgba($gradient-to, 0.5) 200vh);
 
 // background-color: #100000;

@@ -9,6 +9,7 @@ import links from './links';
 import Projects from './sections/Projects';
 import Profile from './sections/Profile';
 import Resume from './sections/Resume';
+import Spotify from './sections/Spotify';
 
 const App = () => {
   const [descriptor, setDescriptor] = useState<string>(getRandomDescriptor());
@@ -102,6 +103,8 @@ const App = () => {
         <br />
         <header ref={galleryRef}> <h2 className="above"> My Pacific Crest Trail Journey </h2> </header>
         <Gallery visible={galleryVisible}/>
+        <br />
+        <Spotify />
         <br />
         {/*<header className="above" ref={projectsRef}> <h2> Projects </h2> </header>*/}
         <div ref={projectsRef} />

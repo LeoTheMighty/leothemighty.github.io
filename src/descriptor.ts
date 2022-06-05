@@ -34,7 +34,7 @@ const DESCRIPTORS = [
   "Has never heard his last name correctly pronounced the first time",
   "Git wizard in training",
   "Middle child",
-  "Northeatern Unviersity's Khoury College of Computer Science Summa Cum Laude Graduate; Class of 2021",
+  "Northeastern University's Khoury College of Computer Science Summa Cum Laude Graduate; Class of 2021",
   "Took him 8 hours to code these stars :(",
   "Discreetly Questions Authority",
   "Existential Crisis Aficionado",

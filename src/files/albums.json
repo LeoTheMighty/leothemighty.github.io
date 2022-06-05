@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Test Album",
+    "artist": "doja",
+    "img": "url",
+    "url": ""
+  },
+  {
+    "name": "Test Album 2",
+    "artist": "kendirick",
+    "img": "url",
+    "url": ""
+  },
+  {
+    "name": "Test Album 4",
+    "img": "url",
+    "artist": "kenaye",
+    "url": ""
+  },
+  {
+    "name": "Test Album 6",
+    "img": "url",
+    "artist": "beyonc",
+    "url": ""
+  },
+  {
+    "name": "Test Album 7",
+    "img": "url",
+    "artist": "beyonc",
+    "url": ""
+  }
+]
