@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import albums from '../files/albums.json';
-import test from '../images/test.jpg';
-import { newTab } from '../helper';
-import links from '../links';
-import SpotifyIconViewer from './spotify/SpotifyIconViewer';
-import { SpotifyItemType } from './spotify/types';
+import albums from '../../files/albums.json';
+import test from '../../images/test.jpg';
+import { newTab } from '../../helper';
+import links from '../../links';
+import SpotifyIconViewer from './SpotifyIconViewer';
+import { SpotifyItemType, SpotifyType } from './types';
+import SpotifyHeader from './SpotifyHeader';
 
 const STARTING_NUMBER = 15;
 const NUM_ALBUMS_FETCH = 5;
@@ -124,8 +125,7 @@ const getAlbumComponents = (albums: Album[]): JSX.Element[] => {
 
 const Spotify = () => {
   const [albums, setAlbums] = useState<Album[]>([]);
-  const [viewType, setViewType] = useState<"icon" | "list">("icon");
-  const [itemType, setItemType] = useState<SpotifyItemType>("album");
+  const [spotifyType, setSpotifyType] = useState<SpotifyType>({ view: "icon", item: "album" });
 
   const [albumComps, setAlbumComps] = useState<JSX.Element[]>([]);
 
@@ -139,22 +139,8 @@ const Spotify = () => {
 
   return (
     <div className="spotify">
-      <header>
-        <div>
-
-        </div>
-        <h2 className="above">
-          My Favorite
-
-          <button onClick={() => alert('hey')}>
-            Albums <i className="bi-chevron-down" />
-          </button>
-        </h2>
-        <div>
-
-        </div>
-      </header>
-      <SpotifyIconViewer type={itemType} items={albums} />
+      <SpotifyHeader value={spotifyType} setValue={setSpotifyType} />
+      <SpotifyIconViewer type={spotifyType.item} items={albums} />
       {/*<div className="albums">*/}
         {/*{ albumComps }*/}
       {/*</div>*/}
@@ -171,6 +157,9 @@ const Spotify = () => {
         <a href={links.spotifyDeveloper} className="above spotify-api-link" {...newTab}>
           <i className="bi-spotify inline-icon" />
           Using Spotify's API
+        </a>
+        <a href={links.spotifyDeveloper} className="ml-2 above spotify-api-link" {...newTab}>
+          generated with my SpotifyManager
         </a>
       </div>
     </div>

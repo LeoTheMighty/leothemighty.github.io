@@ -1,20 +1,22 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import './styles/App.scss';
-import Gallery from "./sections/Gallery";
-import useOnScreen from "./hooks/UseOnScreen";
+import Gallery from './sections/Gallery';
+import useOnScreen from './hooks/UseOnScreen';
+import useSlingScroll from './hooks/UseSlingScroll';
 import { newTab } from './helper';
 import { getRandomDescriptor } from './descriptor';
 import links from './links';
 import Projects from './sections/Projects';
 import Profile from './sections/Profile';
 import Resume from './sections/Resume';
-import Spotify from './sections/Spotify';
+import Spotify from './sections/spotify/Spotify';
 
 const App = () => {
   const [descriptor, setDescriptor] = useState<string>(getRandomDescriptor());
   const [starsOn, setStarsOn] = useState(true);
   const [blobsOn, setBlobsOn] = useState(true);
+  const [slingOn, setSlingOn] = useState(false);
 
   const galleryRef = useRef<null | HTMLDivElement>(null);
   const projectsRef = useRef<null | HTMLDivElement>(null);
@@ -24,6 +26,8 @@ const App = () => {
   const spotifyRef = useRef<null | HTMLDivElement>(null);
 
   const galleryVisible = useOnScreen(galleryRef);
+
+  useSlingScroll(slingOn);
 
   const scrollTo = (dest: string) => {
     let ref = null;
@@ -46,10 +50,10 @@ const App = () => {
   };
 
   return (
-    <div className="overlay-container">
+    <div className="overlay-container" onScroll={() => console.log('hello')}>
       { starsOn && (<div id="stars"><div /></div>) }
       { blobsOn && (<div id="blobs"><div /></div>) }
-      <div className="App">
+      <div className="App" onScroll={() => console.log('hello')}>
         <div className="d-flex separator">
           <div className="col d-flex justify-content-start fixed-top">
             <button
@@ -65,6 +69,13 @@ const App = () => {
               onClick={() => setStarsOn(p => !p)}
             >
               <i className={"bi bi-stars" + (starsOn ? " bi-lit" : "")} />
+            </button>
+            <button
+              type="button"
+              className="above pr-1 btn shadow-none"
+              onClick={() => setSlingOn(p => !p)}
+            >
+              <i className={"bi bi-emoji-smile" + (slingOn ? "-fill bi-lit" : "")} />
             </button>
           </div>
           {/*<div className="col d-flex justify-content-end">*/}
@@ -99,7 +110,7 @@ const App = () => {
         </div>
         <div className="d-flex justify-content-center separator">
           <a href={links.source} {...newTab} className="col d-flex justify-content-center align-items-center font-ter">
-            View my project source on Github
+            View my project on Github
           </a>
         </div>
         <div className="separator" />
