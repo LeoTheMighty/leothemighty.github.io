@@ -54,7 +54,8 @@ The spotify info we want to add is as follows in this order:
 {
     "name": "playlist name",
     "img" : "playlist image url",
-    "url" : "playlist external url"
+    "url" : "playlist external url",
+    "description": "playlist description"
 }
 ```
 
@@ -62,7 +63,7 @@ The spotify info we want to add is as follows in this order:
 
 ```json
 {
-    "artist": "artist name",
+    "name": "artist name",
     "img" : "artist image url",
     "url" : "just good playlist external url",
     "description": "just good playlist description"
@@ -145,19 +146,45 @@ class Playlist:
         self.__init__( # TODO BIG QUESTION MARKS HERE!!!
             playlist["name"],
             playlist["image_urls"][0], # TODO: HOW DO YOU GET THE PLAYLIST URL, DOES IT COME FOR FREE??????
-            playlist["external_url"]
+            playlist["external_url"],
+            playlist["description"]
         )
 
-    def __init__(self, name, img, url):
+    def __init__(self, name, img, url, description):
         self.name = name
         self.img = img
         self.url = url
+        self.description = description
 
     def to_json(self):
         return {
             "name": self.name,
             "img": self.img,
-            "url": self.url
+            "url": self.url,
+            "description": self.description
+        }
+
+class JustGoodPlaylist:
+    def __init__(self, playlist):
+        self.__init__(
+            playlist["name"],
+            playlist["image_urls"][0], # TODO: HOW DO YOU GET THE PLAYLIST URL, DOES IT COME FOR FREE??????
+            playlist["external_url"],
+            playlist["description"]
+        )
+
+    def __init__(self, artist, img, url, description):
+        self.artist = artist
+        self.img = img
+        self.url = url
+        self.description = description
+
+    def to_json(self):
+        return {
+            "name": self.artist,
+            "img": self.img,
+            "url": self.url,
+            "description": self.description
         }
 
 

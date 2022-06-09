@@ -71,6 +71,18 @@ code {
   font-weight: 300;
 }
 
+.font-prim {
+  color: $primary-font-color;
+}
+
+.font-sec {
+  color: $secondary-font-color;
+}
+
+.font-ter {
+  color: $ternary-font-color;
+}
+
 .overlay-container {
   background-image: $primary-gradient;
   width: 100%;
@@ -271,7 +283,7 @@ code {
 
 }
 
-.albums {
+.spotify-album-icon-viewer {
   margin: 1vw;
   display: flex;
   justify-content: center;
@@ -279,24 +291,24 @@ code {
   flex-wrap: wrap;
 }
 
-.album {
+.spotify-icon {
   margin: 1vw;
-}
-
-.album-img {
   width: 30vw;
   max-width: 16rem;
-  height: 30vw;
-  max-height: 16rem;
+}
+
+.spotify-icon-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: 4px;
 }
 
-.album-title {
+.spotify-icon-name {
   color: $ternary-font-color;
   margin: 0;
 }
 
-.album-artist {
+.spotify-icon-artist {
   color: $ternary-font-color;
   margin: 0;
 }

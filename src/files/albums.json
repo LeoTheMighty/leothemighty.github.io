@@ -1,32 +1,908 @@
 [
-  {
-    "name": "Test Album",
-    "artist": "doja",
-    "img": "url",
-    "url": ""
-  },
-  {
-    "name": "Test Album 2",
-    "artist": "kendirick",
-    "img": "url",
-    "url": ""
-  },
-  {
-    "name": "Test Album 4",
-    "img": "url",
-    "artist": "kenaye",
-    "url": ""
-  },
-  {
-    "name": "Test Album 6",
-    "img": "url",
-    "artist": "beyonc",
-    "url": ""
-  },
-  {
-    "name": "Test Album 7",
-    "img": "url",
-    "artist": "beyonc",
-    "url": ""
-  }
+    {
+        "name": "thank u, next",
+        "img": "https://i.scdn.co/image/ab67616d0000b27356ac7b86e090f307e218e9c8",
+        "artist": "Ariana Grande",
+        "url": "https://open.spotify.com/album/2fYhqwDWXjbpjaIJPEfKFw"
+    },
+    {
+        "name": "Compton",
+        "img": "https://i.scdn.co/image/ab67616d0000b2732fc5548485c214ab53477a96",
+        "artist": "Dr. Dre",
+        "url": "https://open.spotify.com/album/6ZnMFVV5HDv2xmHG7bn7et"
+    },
+    {
+        "name": "Rodeo (Expanded Edition)",
+        "img": "https://i.scdn.co/image/ab67616d0000b2737433176f037e0ba14190c34f",
+        "artist": "Travis Scott",
+        "url": "https://open.spotify.com/album/4PWBTB6NYSKQwfo79I3prg"
+    },
+    {
+        "name": "Starboy",
+        "img": "https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452",
+        "artist": "The Weeknd, Daft Punk",
+        "url": "https://open.spotify.com/album/2ODvWsOgouMbaA5xf0RkJe"
+    },
+    {
+        "name": "Take Care (Deluxe)",
+        "img": "https://i.scdn.co/image/ab67616d0000b273c7ea04a9b455e3f68ef82550",
+        "artist": "Drake",
+        "url": "https://open.spotify.com/album/6X1x82kppWZmDzlXXK3y3q"
+    },
+    {
+        "name": "Ctrl",
+        "img": "https://i.scdn.co/image/ab67616d0000b2734c79d5ec52a6d0302f3add25",
+        "artist": "SZA",
+        "url": "https://open.spotify.com/album/76290XdXVF9rPzGdNRWdCh"
+    },
+    {
+        "name": "Apricot Princess",
+        "img": "https://i.scdn.co/image/ab67616d0000b27394c6cd33b8be451c2372c6fa",
+        "artist": "Rex Orange County",
+        "url": "https://open.spotify.com/album/2NBVxjZcbH5H1N1Ab2ExDH"
+    },
+    {
+        "name": "Fine Line",
+        "img": "https://i.scdn.co/image/ab67616d0000b27377fdcfda6535601aff081b6a",
+        "artist": "Harry Styles",
+        "url": "https://open.spotify.com/album/7xV2TzoaVc0ycW7fwBwAml"
+    },
+    {
+        "name": "( )",
+        "img": "https://i.scdn.co/image/ab67616d0000b273b86f9276199af632c42a90cc",
+        "artist": "Sigur Rós",
+        "url": "https://open.spotify.com/album/3FR8CV7OSyZDnxneavnh8t"
+    },
+    {
+        "name": "Ágætis byrjun",
+        "img": "https://i.scdn.co/image/ab67616d0000b2735155b8344b7747e9708bd16d",
+        "artist": "Sigur Rós",
+        "url": "https://open.spotify.com/album/1DMMv1Kmoli3Y9fVEZDUVC"
+    },
+    {
+        "name": "In Rainbows",
+        "img": "https://i.scdn.co/image/ab67616d0000b273de3c04b5fc750b68899b20a9",
+        "artist": "Radiohead",
+        "url": "https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK"
+    },
+    {
+        "name": "Kid A",
+        "img": "https://i.scdn.co/image/ab67616d0000b2736c7112082b63beefffe40151",
+        "artist": "Radiohead",
+        "url": "https://open.spotify.com/album/6GjwtEZcfenmOf6l18N7T7"
+    },
+    {
+        "name": "OK Computer",
+        "img": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
+        "artist": "Radiohead",
+        "url": "https://open.spotify.com/album/6dVIqQ8qmQ5GBnJ9shOYGE"
+    },
+    {
+        "name": "Origin of Symmetry",
+        "img": "https://i.scdn.co/image/ab67616d0000b273a9e6856251d6c4b13167924a",
+        "artist": "Muse",
+        "url": "https://open.spotify.com/album/1AP6uGYHdakRgwuWQsP5pK"
+    },
+    {
+        "name": "Acid Rap",
+        "img": "https://i.scdn.co/image/ab67616d0000b273d95ab48a8a9de3c4a2cbfe80",
+        "artist": "Chance the Rapper, BJ The Chicago Kid, Lili K",
+        "url": "https://open.spotify.com/album/2VBcztE58pBKjIDS5oEgFh"
+    },
+    {
+        "name": "IGOR",
+        "img": "https://i.scdn.co/image/ab67616d0000b2737005885df706891a3c182a57",
+        "artist": "Tyler, The Creator",
+        "url": "https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE"
+    },
+    {
+        "name": "good kid, m.A.A.d city",
+        "img": "https://i.scdn.co/image/ab67616d0000b273d28d2ebdedb220e479743797",
+        "artist": "Kendrick Lamar",
+        "url": "https://open.spotify.com/album/6PBZN8cbwkqm1ERj2BGXJ1"
+    },
+    {
+        "name": "To Pimp A Butterfly",
+        "img": "https://i.scdn.co/image/ab67616d0000b273cdb645498cd3d8a2db4d05e1",
+        "artist": "Kendrick Lamar, George Clinton, Thundercat",
+        "url": "https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP"
+    },
+    {
+        "name": "channel ORANGE (Explicit Version)",
+        "img": "https://i.scdn.co/image/ab67616d0000b273f11f1c4ad183b7fa625f8534",
+        "artist": "Frank Ocean",
+        "url": "https://open.spotify.com/album/623Ef2ZEB3Njklix4PC0Rs"
+    },
+    {
+        "name": "Blonde",
+        "img": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+        "artist": "Frank Ocean",
+        "url": "https://open.spotify.com/album/3mH6qwIy9crq0I9YQbOuDf"
+    },
+    {
+        "name": "Vices & Virtues",
+        "img": "https://i.scdn.co/image/ab67616d0000b273d8f40ad88ed77a939b716d19",
+        "artist": "Panic! At The Disco",
+        "url": "https://open.spotify.com/album/5S0nsfYhHa1uz10V4yoWSL"
+    },
+    {
+        "name": "Lift Your Skinny Fists Like Antennas to Heaven",
+        "img": "https://i.scdn.co/image/ab67616d0000b2730791c8a2dc44008c52b4883a",
+        "artist": "Godspeed You! Black Emperor",
+        "url": "https://open.spotify.com/album/2rT82YYlV9UoxBYLIezkRq"
+    },
+    {
+        "name": "We Sing. We Dance. We Steal Things.",
+        "img": "https://i.scdn.co/image/ab67616d0000b2730f2e51f7121539e221c51161",
+        "artist": "Jason Mraz",
+        "url": "https://open.spotify.com/album/04G0YylSjvDQZrjOfE5jA5"
+    },
+    {
+        "name": "Sgt. Pepper's Lonely Hearts Club Band (Remastered)",
+        "img": "https://i.scdn.co/image/ab67616d0000b273525ce7c1045374f0f9e62965",
+        "artist": "The Beatles",
+        "url": "https://open.spotify.com/album/1PULmKbHeOqlkIwcDMNwD4"
+    },
+    {
+        "name": "The Life Of Pablo",
+        "img": "https://i.scdn.co/image/ab67616d0000b2732a7db835b912dc5014bd37f4",
+        "artist": "Kanye West",
+        "url": "https://open.spotify.com/album/7gsWAHLeT0w7es6FofOXk1"
+    },
+    {
+        "name": "Late Registration",
+        "img": "https://i.scdn.co/image/ab67616d0000b273428d2255141c2119409a31b2",
+        "artist": "Kanye West",
+        "url": "https://open.spotify.com/album/5ll74bqtkcXlKE7wwkMq4g"
+    },
+    {
+        "name": "Random Access Memories",
+        "img": "https://i.scdn.co/image/ab67616d0000b2731d97ca7376f835055f828139",
+        "artist": "Daft Punk",
+        "url": "https://open.spotify.com/album/4m2880jivSbbyEGAKfITCa"
+    },
+    {
+        "name": "Splendido Hotel",
+        "img": "https://i.scdn.co/image/ab67616d0000b27374afb4a8bfb265d6d4ae8bd3",
+        "artist": "Al Di Meola",
+        "url": "https://open.spotify.com/album/0muELmePPWZJW1nSD4U6k4"
+    },
+    {
+        "name": "Moanin' (Expanded Edition)",
+        "img": "https://i.scdn.co/image/ab67616d0000b273c653150f8ed1f6a12348ba79",
+        "artist": "Lee Morgan",
+        "url": "https://open.spotify.com/album/5PzlTnVafjgt5RtjTdIKoC"
+    },
+    {
+        "name": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+        "img": "https://i.scdn.co/image/ab67616d0000b27350a3147b4edd7701a876c6ce",
+        "artist": "Billie Eilish",
+        "url": "https://open.spotify.com/album/0S0KGZnfBGSIssfF54WSJh"
+    },
+    {
+        "name": "Finding Gabriel",
+        "img": "https://i.scdn.co/image/ab67616d0000b273f6130763d13db0a96980cc28",
+        "artist": "Brad Mehldau",
+        "url": "https://open.spotify.com/album/7wOosKPp2hjtrdmbn7aBQS"
+    },
+    {
+        "name": "Octavarium",
+        "img": "https://i.scdn.co/image/ab67616d0000b273f58c468c711f44450a87cb42",
+        "artist": "Dream Theater",
+        "url": "https://open.spotify.com/album/4v6kYkn7mYjlWS9vONmmCP"
+    },
+    {
+        "name": "I Wanna Meet Richard Dreyfuss",
+        "img": "https://i.scdn.co/image/ab67616d0000b2737a2d7436864bd06eabbcef3c",
+        "artist": "Gabriel Gundacker",
+        "url": "https://open.spotify.com/album/4iUUkWzaXdmAE1bRmI9D04"
+    },
+    {
+        "name": "Foxtrot",
+        "img": "https://i.scdn.co/image/ab67616d0000b27369337b6f76bd7943acdcd192",
+        "artist": "Genesis",
+        "url": "https://open.spotify.com/album/3y67YB3vSbaopIg1VoAO1n"
+    },
+    {
+        "name": "Veckatimest",
+        "img": "https://i.scdn.co/image/ab67616d0000b273f5819f138439b3ac881a2a6b",
+        "artist": "Grizzly Bear",
+        "url": "https://open.spotify.com/album/6FIFqclBriPCb0SjWDaHIk"
+    },
+    {
+        "name": "Polychrome.",
+        "img": "https://i.scdn.co/image/ab67616d0000b273e3c05d9378c97ce3f2fcb2c1",
+        "artist": "Harrison Fjord",
+        "url": "https://open.spotify.com/album/5SQRcSZHUwiYmOPkMzr6dp"
+    },
+    {
+        "name": "Choose Your Weapon",
+        "img": "https://i.scdn.co/image/ab67616d0000b27365c29c4a590e9e9b03467c5a",
+        "artist": "Hiatus Kaiyote",
+        "url": "https://open.spotify.com/album/3qzmmmRmVBiOuMvrerfW4z"
+    },
+    {
+        "name": "The Shape of Colour",
+        "img": "https://i.scdn.co/image/ab67616d0000b27305418a99083b7551b30f5593",
+        "artist": "Intervals",
+        "url": "https://open.spotify.com/album/4MYLm8Uxayy4UyqFHPHfBB"
+    },
+    {
+        "name": "The Blueprint (Explicit Version)",
+        "img": "https://i.scdn.co/image/ab67616d0000b2731b3f6f34954118500ed3e7a7",
+        "artist": "JAY-Z",
+        "url": "https://open.spotify.com/album/69CmkikTHkGKdkrUZTtyWl"
+    },
+    {
+        "name": "The Bad Plus Joshua Redman",
+        "img": "https://i.scdn.co/image/ab67616d0000b273dd1fa207bae05083a5131680",
+        "artist": "Joshua Redman, The Bad Plus",
+        "url": "https://open.spotify.com/album/2tzJagRYnAeB9j65wJx2j3"
+    },
+    {
+        "name": "Kind Of Blue (Legacy Edition)",
+        "img": "https://i.scdn.co/image/ab67616d0000b2730ebc17239b6b18ba88cfb8ca",
+        "artist": "Miles Davis, John Coltrane, Cannonball Adderley, Bill Evans",
+        "url": "https://open.spotify.com/album/4sb0eMpDn3upAFfyi4q2rw"
+    },
+    {
+        "name": "Quiet World",
+        "img": "https://i.scdn.co/image/ab67616d0000b27328e32ee7aa94ac26ba6cf004",
+        "artist": "Native Construct",
+        "url": "https://open.spotify.com/album/2xMLC2kZe4aMMbupatoDZy"
+    },
+    {
+        "name": "Radiohead, A Jazz Symphony",
+        "img": "https://i.scdn.co/image/ab67616d0000b27340ce5c26e82c84b99bc5fa07",
+        "artist": "Noordpool Orchestra",
+        "url": "https://open.spotify.com/album/0z0JtBRlABbJfRKOICEn4m"
+    },
+    {
+        "name": "The Dark Side of the Moon",
+        "img": "https://i.scdn.co/image/ab67616d0000b273ea7caaff71dea1051d49b2fe",
+        "artist": "Pink Floyd",
+        "url": "https://open.spotify.com/album/4LH4d3cOWNNsVw41Gqt2kv"
+    },
+    {
+        "name": "Animals",
+        "img": "https://i.scdn.co/image/ab67616d0000b273810168d54f85d48f07389237",
+        "artist": "Pink Floyd",
+        "url": "https://open.spotify.com/album/3b4E89rxzZQ9zkhgKpj8N4"
+    },
+    {
+        "name": "Wish You Were Here",
+        "img": "https://i.scdn.co/image/ab67616d0000b2731a84d71391df7469c5ab8539",
+        "artist": "Pink Floyd",
+        "url": "https://open.spotify.com/album/0bCAjiUamIFqKJsekOYuRw"
+    },
+    {
+        "name": "The Satanic Satanist",
+        "img": "https://i.scdn.co/image/ab67616d0000b273b31ea2650f87bfef29fbc355",
+        "artist": "Portugal. The Man",
+        "url": "https://open.spotify.com/album/5HdvwiCT7MRMtTmGBwPpNX"
+    },
+    {
+        "name": "Magnifique",
+        "img": "https://i.scdn.co/image/ab67616d0000b2730b5b99fb19077cdfc8fe8594",
+        "artist": "Ratatat",
+        "url": "https://open.spotify.com/album/4Lp4NxL8v03Mxg3hbAgW1Z"
+    },
+    {
+        "name": "Sun Machine",
+        "img": "https://i.scdn.co/image/ab67616d0000b27384816d98dd6196c4ff893800",
+        "artist": "Rubblebucket",
+        "url": "https://open.spotify.com/album/5Nzqg5Xb7xaKfl3XudeNiY"
+    },
+    {
+        "name": "We Like It Here",
+        "img": "https://i.scdn.co/image/ab67616d0000b273a29d1ada28cf3d9d5fe1972d",
+        "artist": "Snarky Puppy",
+        "url": "https://open.spotify.com/album/4GzjQ0xXRlLl78ih481BUi"
+    },
+    {
+        "name": "The Royal Scam",
+        "img": "https://i.scdn.co/image/ab67616d0000b2736ac9fc028a8ba4c13b34a784",
+        "artist": "Steely Dan",
+        "url": "https://open.spotify.com/album/1Sur33x6g7tvdd9GQnHhhu"
+    },
+    {
+        "name": "The Hands That Thieve",
+        "img": "https://i.scdn.co/image/ab67616d0000b2739f613468da45d75bac9cb546",
+        "artist": "Streetlight Manifesto",
+        "url": "https://open.spotify.com/album/3sZ300pdz8v0l1Jd4NFQbY"
+    },
+    {
+        "name": "Crime Of The Century (Remastered)",
+        "img": "https://i.scdn.co/image/ab67616d0000b27389d7032603b62e9aedb03fa2",
+        "artist": "Supertramp",
+        "url": "https://open.spotify.com/album/2wrHaulTgqqkVKx0k7Kq4r"
+    },
+    {
+        "name": "Mockroot",
+        "img": "https://i.scdn.co/image/ab67616d0000b273259a2f1f5ccc8e2bd97fbbec",
+        "artist": "Tigran Hamasyan",
+        "url": "https://open.spotify.com/album/59AeaIeAx6S2igYJFjltRE"
+    },
+    {
+        "name": "Ænima",
+        "img": "https://i.scdn.co/image/ab67616d0000b273dce45359981d62e087a29e6f",
+        "artist": "TOOL",
+        "url": "https://open.spotify.com/album/6yWMN087PgSimbcVmHLEwG"
+    },
+    {
+        "name": "Vessel",
+        "img": "https://i.scdn.co/image/ab67616d0000b273d263500f1f97e978daa5ceb1",
+        "artist": "Twenty One Pilots",
+        "url": "https://open.spotify.com/album/2r2r78NE05YjyHyVbVgqFn"
+    },
+    {
+        "name": "Father of the Bride",
+        "img": "https://i.scdn.co/image/ab67616d0000b27360124a534f8f257e7c158613",
+        "artist": "Vampire Weekend, Danielle Haim",
+        "url": "https://open.spotify.com/album/5WWu3iYAXLgqghjU9696Nk"
+    },
+    {
+        "name": "Thrill of the Arts",
+        "img": "https://i.scdn.co/image/ab67616d0000b2739ac61b549ad39e5af30e340e",
+        "artist": "Vulfpeck",
+        "url": "https://open.spotify.com/album/0LyGgFrZFXpRKpgj664Xu7"
+    },
+    {
+        "name": "True Colors",
+        "img": "https://i.scdn.co/image/ab67616d0000b273d040bc5b46915b49a64d7b1d",
+        "artist": "Zedd, Bahari",
+        "url": "https://open.spotify.com/album/4jKdXIJckKh7la6xHuKwRT"
+    },
+    {
+        "name": "Crawl Space",
+        "img": "https://i.scdn.co/image/ab67616d0000b2737f174d863b98b18bfacf53f2",
+        "artist": "Art Farmer",
+        "url": "https://open.spotify.com/album/5SNc8uwbqPHFxpdOsV808z"
+    },
+    {
+        "name": "Because the Internet",
+        "img": "https://i.scdn.co/image/ab67616d0000b273fce23dadb51975ebf2e9d75c",
+        "artist": "Childish Gambino",
+        "url": "https://open.spotify.com/album/4GNIhgEGXzWGAefgN5qjdU"
+    },
+    {
+        "name": "Bitches Brew",
+        "img": "https://i.scdn.co/image/ab67616d0000b2733f29c5269be5a4e9c4611d7a",
+        "artist": "Miles Davis",
+        "url": "https://open.spotify.com/album/3Q0zkOZEOC855ErOOJ1AdO"
+    },
+    {
+        "name": "Blue Train",
+        "img": "https://i.scdn.co/image/ab67616d0000b273611ea3fb281f7956ffd33b77",
+        "artist": "John Coltrane",
+        "url": "https://open.spotify.com/album/2Z11cXWEa2qqYQBGkJrCga"
+    },
+    {
+        "name": "Chet Baker Sings",
+        "img": "https://i.scdn.co/image/ab67616d0000b273bcaf6f097b310e20504f2de0",
+        "artist": "Chet Baker",
+        "url": "https://open.spotify.com/album/5JJ779nrbHx0KB2lBrMMa4"
+    },
+    {
+        "name": "The Chronic",
+        "img": "https://i.scdn.co/image/ab67616d0000b273dc20ba099bc933674f58ebae",
+        "artist": "Dr. Dre",
+        "url": "https://open.spotify.com/album/6vdFSyhPjL4dZFkgRtToXH"
+    },
+    {
+        "name": "DAMN.",
+        "img": "https://i.scdn.co/image/ab67616d0000b2738b52c6b9bc4e43d873869699",
+        "artist": "Kendrick Lamar",
+        "url": "https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY"
+    },
+    {
+        "name": "Departure Songs",
+        "img": "https://i.scdn.co/image/ab67616d0000b273179d221575fcaa5d1214d562",
+        "artist": "We Lost The Sea",
+        "url": "https://open.spotify.com/album/6kX70VpxBPh3obLuUg6V8m"
+    },
+    {
+        "name": "Do Your Dance!",
+        "img": "https://i.scdn.co/image/ab67616d0000b2739ca676d719fa7e3e1b8c1178",
+        "artist": "Kenny Garrett",
+        "url": "https://open.spotify.com/album/0wulP6vNc363qbWjIgDGDq"
+    },
+    {
+        "name": "Dr. Dre Presents... The Aftermath",
+        "img": "https://i.scdn.co/image/ab67616d0000b2733613623034ab74bfc48cbf91",
+        "artist": "RC, Sid McCoy",
+        "url": "https://open.spotify.com/album/65iIvuaOUH25KGUwpYNYgh"
+    },
+    {
+        "name": "Everything Goes Numb",
+        "img": "https://i.scdn.co/image/ab67616d0000b27302c5106bd25321cd34e96bb8",
+        "artist": "Streetlight Manifesto",
+        "url": "https://open.spotify.com/album/5slTcrsJ9B8Q4q8rA135XE"
+    },
+    {
+        "name": "Giant Steps (Deluxe Edition)",
+        "img": "https://i.scdn.co/image/ab67616d0000b273a45f9f358eb8ff3a18622059",
+        "artist": "John Coltrane",
+        "url": "https://open.spotify.com/album/3kxiL93hCFCIXkXJBLcYDi"
+    },
+    {
+        "name": "Like Vines",
+        "img": "https://i.scdn.co/image/ab67616d0000b273ff8329e1f16a84f6d095677b",
+        "artist": "The Hush Sound",
+        "url": "https://open.spotify.com/album/3sYfvpmvDAZLbawkDZN2fi"
+    },
+    {
+        "name": "Hex",
+        "img": "https://i.scdn.co/image/ab67616d0000b27388d4aa0e201581ddc86fdeec",
+        "artist": "Bark Psychosis",
+        "url": "https://open.spotify.com/album/7j98uMKCZuBQU1SPcrQAxP"
+    },
+    {
+        "name": "Imperial",
+        "img": "https://i.scdn.co/image/ab67616d0000b273166442984ba98f0a2dcaea5e",
+        "artist": "Denzel Curry",
+        "url": "https://open.spotify.com/album/42fyKPanos0Q3woi848ktg"
+    },
+    {
+        "name": "In The Court Of The Crimson King (Expanded & Remastered Original Album Mix)",
+        "img": "https://i.scdn.co/image/ab67616d0000b2739f2179592d196f575b7a0ff5",
+        "artist": "King Crimson",
+        "url": "https://open.spotify.com/album/5wec5BciMpDMzlEFpYeHse"
+    },
+    {
+        "name": "Karma",
+        "img": "https://i.scdn.co/image/ab67616d0000b2733fa3bd9e8da421f0617acda7",
+        "artist": "Pharoah Sanders",
+        "url": "https://open.spotify.com/album/04sSPjO9MQFQ6fG4lpBI3G"
+    },
+    {
+        "name": "Light As A Feather (Deluxe Edition)",
+        "img": "https://i.scdn.co/image/ab67616d0000b2739533b590f083380ad586a589",
+        "artist": "Chick Corea, Return To Forever",
+        "url": "https://open.spotify.com/album/2wkmxijYToqAr0ATgcNSsn"
+    },
+    {
+        "name": "Midnight Marauders",
+        "img": "https://i.scdn.co/image/ab67616d0000b27381db9bf27bf2a04a1298eadb",
+        "artist": "A Tribe Called Quest",
+        "url": "https://open.spotify.com/album/4v5x3Oo3UjQ9YmF3hRAip5"
+    },
+    {
+        "name": "Malibu",
+        "img": "https://i.scdn.co/image/ab67616d0000b273f8e77075414234fd77fce32b",
+        "artist": "Anderson .Paak",
+        "url": "https://open.spotify.com/album/4VFG1DOuTeDMBjBLZT7hCK"
+    },
+    {
+        "name": "Monk's Dream",
+        "img": "https://i.scdn.co/image/ab67616d0000b273710444d313a55d9f53dbea6e",
+        "artist": "Thelonious Monk",
+        "url": "https://open.spotify.com/album/5VTlqV8lZH3YspQ1cDcjrL"
+    },
+    {
+        "name": "Mr. Hands",
+        "img": "https://i.scdn.co/image/ab67616d0000b273577aaf1b0f1cd73aca82fc28",
+        "artist": "Herbie Hancock",
+        "url": "https://open.spotify.com/album/0ZzOJ3XuyVDBIWxrA17YE5"
+    },
+    {
+        "name": "No Room For Squares (Remastered 2000 / Rudy Van Gelder Edition)",
+        "img": "https://i.scdn.co/image/ab67616d0000b273b550dd904a424c2f18bf5f1c",
+        "artist": "Hank Mobley",
+        "url": "https://open.spotify.com/album/3qer0IWDm6mSLUJy4ji0Oi"
+    },
+    {
+        "name": "Pathways",
+        "img": "https://i.scdn.co/image/ab67616d0000b273158f3095ee05414a18aecc2f",
+        "artist": "Dave Holland Octet",
+        "url": "https://open.spotify.com/album/5riwxZs7EwIqTIF1yd8JPS"
+    },
+    {
+        "name": "Saxophone Colossus",
+        "img": "https://i.scdn.co/image/ab67616d0000b27319d9b2d8f296f97d144b0523",
+        "artist": "Sonny Rollins, Tommy Flanagan, Doug Watkins, Max Roach",
+        "url": "https://open.spotify.com/album/2dtjLAwt7Cq763h6AupyPZ"
+    },
+    {
+        "name": "Selling England by the Pound",
+        "img": "https://i.scdn.co/image/ab67616d0000b273a257970e3f7fcdb0401727c2",
+        "artist": "Genesis",
+        "url": "https://open.spotify.com/album/1rZGSWC3pMmejDwYG0ZXma"
+    },
+    {
+        "name": "Somethin' Else (Rudy Van Gelder Edition)",
+        "img": "https://i.scdn.co/image/ab67616d0000b2730f81ed1bf84b3585a8492d3d",
+        "artist": "Cannonball Adderley",
+        "url": "https://open.spotify.com/album/3Wu0chxAm4GxSeRnIIf2Om"
+    },
+    {
+        "name": "Sonny Side Up",
+        "img": "https://i.scdn.co/image/ab67616d0000b273649ac42ad238ba36f9d1b167",
+        "artist": "Dizzy Gillespie, Sonny Stitt, Sonny Rollins",
+        "url": "https://open.spotify.com/album/2PUVdwOzX6B6FT9iGfSuJY"
+    },
+    {
+        "name": "That's What's Up",
+        "img": "https://i.scdn.co/image/ab67616d0000b2734d3a3915e01cba53ee7f6437",
+        "artist": "Consider the Source",
+        "url": "https://open.spotify.com/album/2BfU9bNKImT4bRhiWuYoIJ"
+    },
+    {
+        "name": "untitled unmastered.",
+        "img": "https://i.scdn.co/image/ab67616d0000b2738c697f553a46006a5d8886b2",
+        "artist": "Kendrick Lamar",
+        "url": "https://open.spotify.com/album/0kL3TYRsSXnu0iJvFO3rud"
+    },
+    {
+        "name": "Yessongs",
+        "img": "https://i.scdn.co/image/ab67616d0000b273a3905488902420745dd31f36",
+        "artist": "Yes",
+        "url": "https://open.spotify.com/album/5Ko5DhLETWgzPlbI906UeE"
+    },
+    {
+        "name": "1000 Forms Of Fear (Deluxe Version)",
+        "img": "https://i.scdn.co/image/ab67616d0000b273b55ed804149fffbb5e35ff34",
+        "artist": "Sia",
+        "url": "https://open.spotify.com/album/6FdNvoO5sF4EKwCX9je1MH"
+    },
+    {
+        "name": "Mass In Blue",
+        "img": "https://i.scdn.co/image/ab67616d0000b273ad0a887e82cdfb1875ca7687",
+        "artist": "Will Todd, Bethany Halliday, Jim Fleeman, Gareth Huw, Jeremy Backhouse",
+        "url": "https://open.spotify.com/album/0jZfAZg0BTwWbgbIvcUd0J"
+    },
+    {
+        "name": "Positions",
+        "img": "https://i.scdn.co/image/ab67616d0000b2735ef878a782c987d38d82b605",
+        "artist": "Ariana Grande",
+        "url": "https://open.spotify.com/album/3euz4vS7ezKGnNSwgyvKcd"
+    },
+    {
+        "name": "My Finest Work Yet",
+        "img": "https://i.scdn.co/image/ab67616d0000b27374ffdd29cc4898e8ed01d747",
+        "artist": "Andrew Bird",
+        "url": "https://open.spotify.com/album/2xQ1WHVV0MdVSRkpND5P51"
+    },
+    {
+        "name": "Violent Things",
+        "img": "https://i.scdn.co/image/ab67616d0000b273531e9f52ddfac179d3e293c7",
+        "artist": "The Brobecks",
+        "url": "https://open.spotify.com/album/1KLBdhphdiK82hYpAiw8DR"
+    },
+    {
+        "name": "Lemonade",
+        "img": "https://i.scdn.co/image/ab67616d0000b27389992f4d7d4ab94937bf9e23",
+        "artist": "Beyoncé",
+        "url": "https://open.spotify.com/album/7dK54iZuOxXFarGhXwEXfF"
+    },
+    {
+        "name": "Death Of An Optimist",
+        "img": "https://i.scdn.co/image/ab67616d0000b27334525e139f6f72a79963650c",
+        "artist": "grandson",
+        "url": "https://open.spotify.com/album/0n5LA95QYWAs9wwkkA8Sji"
+    },
+    {
+        "name": "Discovery",
+        "img": "https://i.scdn.co/image/ab67616d0000b273b33d46dfa2635a47eebf63b2",
+        "artist": "Daft Punk",
+        "url": "https://open.spotify.com/album/2noRn2Aes5aoNVsU6iWThc"
+    },
+    {
+        "name": "Torches",
+        "img": "https://i.scdn.co/image/ab67616d0000b273121d5f92cf90576907dfb1e5",
+        "artist": "Foster The People",
+        "url": "https://open.spotify.com/album/7Kmmw7Z5D2UD5MVwdm10sT"
+    },
+    {
+        "name": "2014 Forest Hills Drive",
+        "img": "https://i.scdn.co/image/ab67616d0000b2736aca031ccc27d2e4dd829d14",
+        "artist": "J. Cole",
+        "url": "https://open.spotify.com/album/7viNUmZZ8ztn2UB4XB3jIL"
+    },
+    {
+        "name": "Smiling with No Teeth",
+        "img": "https://i.scdn.co/image/ab67616d0000b273e25afbfa377ad84d5675566d",
+        "artist": "Genesis Owusu",
+        "url": "https://open.spotify.com/album/7LI6T5cy6Et8RDZXCoCEtJ"
+    },
+    {
+        "name": "Psychology",
+        "img": "https://i.scdn.co/image/ab67616d0000b273453c76a540cbceedb48b2438",
+        "artist": "Pigeons Playing Ping Pong",
+        "url": "https://open.spotify.com/album/27wYCoAJYIyymo5LIe6Jz8"
+    },
+    {
+        "name": "channel ORANGE",
+        "img": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+        "artist": "Frank Ocean",
+        "url": "https://open.spotify.com/album/392p3shh2jkxUxY2VHvlH8"
+    },
+    {
+        "name": "An Evening With Silk Sonic",
+        "img": "https://i.scdn.co/image/ab67616d0000b273bd5010fd3868c08323bf6d41",
+        "artist": "Bruno Mars, Anderson .Paak, Silk Sonic",
+        "url": "https://open.spotify.com/album/2qLI9pIjubUQMlpdmid2sE"
+    },
+    {
+        "name": "Sonny Side Up",
+        "img": "https://i.scdn.co/image/ab67616d0000b273af81078e64807de26d624ab4",
+        "artist": "Dizzy Gillespie, Sonny Stitt, Sonny Rollins",
+        "url": "https://open.spotify.com/album/0cXTqpKtlggpc2ehHIAQDS"
+    },
+    {
+        "name": "Timeless Tales [For Changing Times]",
+        "img": "https://i.scdn.co/image/ab67616d0000b27333137f861f4738cd7cf3ce73",
+        "artist": "Joshua Redman",
+        "url": "https://open.spotify.com/album/0yioztetjswvCXmqn91t0s"
+    },
+    {
+        "name": "Nearness",
+        "img": "https://i.scdn.co/image/ab67616d0000b2738d27a73ce6053be2c990dbf8",
+        "artist": "Joshua Redman, Brad Mehldau",
+        "url": "https://open.spotify.com/album/5JAcKvUBjbNTJ2SY8u8vYU"
+    },
+    {
+        "name": "The Epic",
+        "img": "https://i.scdn.co/image/ab67616d0000b273b89caebf56746ac0bae93ba9",
+        "artist": "Kamasi Washington",
+        "url": "https://open.spotify.com/album/2j2q2ySuVk43eHB8wI5XQj"
+    },
+    {
+        "name": "For Hamp, Red, Bags, And Cal",
+        "img": "https://i.scdn.co/image/ab67616d0000b273c1d83dbf2dbb7da75e78fc17",
+        "artist": "Gary Burton",
+        "url": "https://open.spotify.com/album/5vxlvG1ZcJyZC5JoMN0zdt"
+    },
+    {
+        "name": "Fat Albert Rotunda",
+        "img": "https://i.scdn.co/image/ab67616d0000b27330c348e8e33a9cdd1aa58152",
+        "artist": "Herbie Hancock",
+        "url": "https://open.spotify.com/album/0EfpGDmzg4uuqLW7ucWCyE"
+    },
+    {
+        "name": "Shadow Theater",
+        "img": "https://i.scdn.co/image/ab67616d0000b2731a93b0acdea3194133b3a0f4",
+        "artist": "Tigran Hamasyan",
+        "url": "https://open.spotify.com/album/3cH2LQH41G3PO5XxmLVxJo"
+    },
+    {
+        "name": "Alive",
+        "img": "https://i.scdn.co/image/ab67616d0000b273307b5595d058462f180af546",
+        "artist": "Hiromi, Anthony Jackson, Simon Phillips",
+        "url": "https://open.spotify.com/album/0hwCAmfVxaP1Mu1UazjmEN"
+    },
+    {
+        "name": "Greatest Hits, Vol. 1",
+        "img": "https://i.scdn.co/image/ab67616d0000b273df56284849af88862a63ee44",
+        "artist": "Jacob Mann Big Band",
+        "url": "https://open.spotify.com/album/2aGGRksxFCcZMrNAy0aptE"
+    },
+    {
+        "name": "Greatest Hits, Vol. 2",
+        "img": "https://i.scdn.co/image/ab67616d0000b273854a4be65f8ed463295a7a81",
+        "artist": "Jacob Mann Big Band",
+        "url": "https://open.spotify.com/album/7pxenZ1W2g7DHhjM0rq3GX"
+    },
+    {
+        "name": "Nostalgia in Times Square",
+        "img": "https://i.scdn.co/image/ab67616d0000b273b2d5c5aece829ed8b5c8cd53",
+        "artist": "Mingus Big Band",
+        "url": "https://open.spotify.com/album/72GOiK3svYQ616wzDN03VK"
+    },
+    {
+        "name": "'Round About Midnight",
+        "img": "https://i.scdn.co/image/ab67616d0000b273cb6f92683ff9ad65f27a3f9f",
+        "artist": "Miles Davis, John Coltrane, Red Garland, Paul Chambers, Philly Joe Jones",
+        "url": "https://open.spotify.com/album/4VUawqEDCHHfrUe77ScQ2K"
+    },
+    {
+        "name": "Duke Ellington & John Coltrane",
+        "img": "https://i.scdn.co/image/ab67616d0000b2732def9ef3f6a82c8d6fd8c143",
+        "artist": "Duke Ellington, John Coltrane",
+        "url": "https://open.spotify.com/album/1OvmilWKtrabJGEpPRlgK5"
+    },
+    {
+        "name": "シーナリィ",
+        "img": "https://i.scdn.co/image/ab67616d0000b273b752bbaa0dd7578b736f7cc1",
+        "artist": "福居良",
+        "url": "https://open.spotify.com/album/5Uny0mkKiVGDat7H6SNDyS"
+    },
+    {
+        "name": "JuJu",
+        "img": "https://i.scdn.co/image/ab67616d0000b2733ec493030e1728f38d042de6",
+        "artist": "Wayne Shorter",
+        "url": "https://open.spotify.com/album/46VoobaZCtFPReElOHFEqq"
+    },
+    {
+        "name": "Coltrane's A Love Supreme Live in Amsterdam",
+        "img": "https://i.scdn.co/image/ab67616d0000b273b3c0f52044251e226eeca1ac",
+        "artist": "Branford Marsalis Quartet",
+        "url": "https://open.spotify.com/album/36dcvNUW0FKini22wMuBJ8"
+    },
+    {
+        "name": "Elastic",
+        "img": "https://i.scdn.co/image/ab67616d0000b273a4536b523a7e370e13cce8ea",
+        "artist": "Joshua Redman",
+        "url": "https://open.spotify.com/album/0Im2cH3mUaIEIsVzMeV7un"
+    },
+    {
+        "name": "April In Paris (Expanded Edition)",
+        "img": "https://i.scdn.co/image/ab67616d0000b2730f1dc304bf2a8fbff37a6c7d",
+        "artist": "Count Basie",
+        "url": "https://open.spotify.com/album/1gDs61sxoI4By9TKxe8Y0k"
+    },
+    {
+        "name": "Backlash",
+        "img": "https://i.scdn.co/image/ab67616d0000b273802e5e1b1a7ca3f18cc43455",
+        "artist": "Freddie Hubbard",
+        "url": "https://open.spotify.com/album/3pZiA4rrKQQP8ZXDAafgYj"
+    },
+    {
+        "name": "Terminal 1",
+        "img": "https://i.scdn.co/image/ab67616d0000b273818446abc2179709bb632741",
+        "artist": "Benny Golson",
+        "url": "https://open.spotify.com/album/3z7cxxCXvRmOav4DiOI3mP"
+    },
+    {
+        "name": "Moon Hooch",
+        "img": "https://i.scdn.co/image/ab67616d0000b273b044d7a344838c474e76e07c",
+        "artist": "Moon Hooch",
+        "url": "https://open.spotify.com/album/0XxLqWttW6u6vP3Yz9Sye3"
+    },
+    {
+        "name": "This Is Cave Music",
+        "img": "https://i.scdn.co/image/ab67616d0000b273a84b7be44c5195c83726d380",
+        "artist": "Moon Hooch",
+        "url": "https://open.spotify.com/album/3gyMNTcNgeFhGNlBRfnPfm"
+    },
+    {
+        "name": "Happier Than Ever",
+        "img": "https://i.scdn.co/image/ab67616d0000b2732a038d3bf875d23e4aeaa84e",
+        "artist": "Billie Eilish",
+        "url": "https://open.spotify.com/album/0JGOiO34nwfUdDrD612dOp"
+    },
+    {
+        "name": "Desiderium",
+        "img": "https://i.scdn.co/image/ab67616d0000b2737b1ecb135cefd2181fad88bd",
+        "artist": "TOKiMONSTA",
+        "url": "https://open.spotify.com/album/2mhTitMTzAO14t7oxcXvaC"
+    },
+    {
+        "name": "Alive 2007",
+        "img": "https://i.scdn.co/image/ab67616d0000b273673288fb985e5c194536ae27",
+        "artist": "Daft Punk",
+        "url": "https://open.spotify.com/album/7u6zL7kqpgLPISZYXNTgYk"
+    },
+    {
+        "name": "A Fever You Can't Sweat Out",
+        "img": "https://i.scdn.co/image/ab67616d0000b2730a8881b0d247346c3c447bf3",
+        "artist": "Panic! At The Disco",
+        "url": "https://open.spotify.com/album/2YeOhhJg3OWpN0F1VYPxtW"
+    },
+    {
+        "name": "Skin",
+        "img": "https://i.scdn.co/image/ab67616d0000b273750d4a1b362296d1b815a223",
+        "artist": "Flume",
+        "url": "https://open.spotify.com/album/4NZWRpoMuXaHU7csTjWdB5"
+    },
+    {
+        "name": "Scaled And Icy",
+        "img": "https://i.scdn.co/image/ab67616d0000b27320b467550945fd123e00f0a5",
+        "artist": "Twenty One Pilots",
+        "url": "https://open.spotify.com/album/0Q5XBpCYFgUWiG9DUWyAmJ"
+    },
+    {
+        "name": "If This Isn’t Nice, I Don’t Know What Is",
+        "img": "https://i.scdn.co/image/ab67616d0000b273178df9e236187d6f1e710f5f",
+        "artist": "Still Woozy",
+        "url": "https://open.spotify.com/album/0QnWm07An8WyO3eupjBDoP"
+    },
+    {
+        "name": "Windswept Adan",
+        "img": "https://i.scdn.co/image/ab67616d0000b2732a98379b6053e71d97449af8",
+        "artist": "Ichiko Aoba",
+        "url": "https://open.spotify.com/album/1W0SccGphtGQNYqaqQ5nhA"
+    },
+    {
+        "name": "Inside Out (Original Motion Picture Soundtrack)",
+        "img": "https://i.scdn.co/image/ab67616d0000b273e14e94354488d0b825ce716c",
+        "artist": "Michael Giacchino",
+        "url": "https://open.spotify.com/album/1sNK9vLvzIo626GznCEsBN"
+    },
+    {
+        "name": "Demon Days",
+        "img": "https://i.scdn.co/image/ab67616d0000b27319d85a472f328a6ed9b704cf",
+        "artist": "Gorillaz",
+        "url": "https://open.spotify.com/album/0bUTHlWbkSQysoM3VsWldT"
+    },
+    {
+        "name": "TV",
+        "img": "https://i.scdn.co/image/ab67616d0000b2737bee23b5177b81131d7d98e9",
+        "artist": "Tai Verdes",
+        "url": "https://open.spotify.com/album/6E8lxwX7KMAO9nCx4A5tAR"
+    },
+    {
+        "name": "Promises",
+        "img": "https://i.scdn.co/image/ab67616d0000b2738718f18aca81c2f4961946f4",
+        "artist": "Floating Points, Pharoah Sanders, London Symphony Orchestra",
+        "url": "https://open.spotify.com/album/3ShtO5VCYa3ctlR5uzLWBa"
+    },
+    {
+        "name": "The Space Between",
+        "img": "https://i.scdn.co/image/ab67616d0000b2732aa5030882fa68960eaa02e1",
+        "artist": "Majid Jordan",
+        "url": "https://open.spotify.com/album/6QC8G4HVk9lkbpxugU7ZgF"
+    },
+    {
+        "name": "Dreamland",
+        "img": "https://i.scdn.co/image/ab67616d0000b273712701c5e263efc8726b1464",
+        "artist": "Glass Animals",
+        "url": "https://open.spotify.com/album/5bfpRtBW7RNRdsm3tRyl3R"
+    },
+    {
+        "name": "Hurry Up, We're Dreaming",
+        "img": "https://i.scdn.co/image/ab67616d0000b273fff2cb485c36a6d8f639bdba",
+        "artist": "M83",
+        "url": "https://open.spotify.com/album/6R0ynY7RF20ofs9GJR5TXR"
+    },
+    {
+        "name": "Big Baby DRAM",
+        "img": "https://i.scdn.co/image/ab67616d0000b273040f399c7f5ad56a29ec9dd0",
+        "artist": "Shelley FKA DRAM",
+        "url": "https://open.spotify.com/album/7CHEC1kVstFUDPTxB3Hz2V"
+    },
+    {
+        "name": "Tradition",
+        "img": "https://i.scdn.co/image/ab67616d0000b273e06d18ec0d225b6d0bd29ef3",
+        "artist": "Monsune",
+        "url": "https://open.spotify.com/album/4zETbpGKT1FHsEZq3QFQUR"
+    },
+    {
+        "name": "Hot Pink",
+        "img": "https://i.scdn.co/image/ab67616d0000b27382b243023b937fd579a35533",
+        "artist": "Doja Cat",
+        "url": "https://open.spotify.com/album/1MmVkhiwTH0BkNOU3nw5d3"
+    },
+    {
+        "name": "Swimming",
+        "img": "https://i.scdn.co/image/ab67616d0000b273175c577a61aa13d4fb4b6534",
+        "artist": "Mac Miller",
+        "url": "https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk"
+    },
+    {
+        "name": "MM...FOOD",
+        "img": "https://i.scdn.co/image/ab67616d0000b27352f194d02c39909d1b284799",
+        "artist": "MF DOOM",
+        "url": "https://open.spotify.com/album/1UcS2nqUhxrZjrBZ3tHk2N"
+    },
+    {
+        "name": "I Love You.",
+        "img": "https://i.scdn.co/image/ab67616d0000b2738265a736a1eb838ad5a0b921",
+        "artist": "The Neighbourhood",
+        "url": "https://open.spotify.com/album/4xkM0BwLM9H2IUcbYzpcBI"
+    },
+    {
+        "name": "Planet Her",
+        "img": "https://i.scdn.co/image/ab67616d0000b2734df3245f26298a1579ecc321",
+        "artist": "Doja Cat",
+        "url": "https://open.spotify.com/album/1nAQbHeOWTfQzbOoFrvndW"
+    },
+    {
+        "name": "Tha Carter III",
+        "img": "https://i.scdn.co/image/ab67616d0000b27333ebdffaa447ff19ce9f24bb",
+        "artist": "Lil Wayne",
+        "url": "https://open.spotify.com/album/5BGzOpea6At0Nd7tYtYZOP"
+    },
+    {
+        "name": "Mr. Morale & The Big Steppers",
+        "img": "https://i.scdn.co/image/ab67616d0000b273f30764d5fa1e439ad6a7742f",
+        "artist": "Kendrick Lamar",
+        "url": "https://open.spotify.com/album/1atjqOZTCdrjxjMyCPZc2g"
+    },
+    {
+        "name": "Good News For People Who Love Bad News",
+        "img": "https://i.scdn.co/image/ab67616d0000b273cc68329bfbf34037df965dc1",
+        "artist": "Modest Mouse",
+        "url": "https://open.spotify.com/album/0TGTGuc2vXv6ZECoAf52N0"
+    }
 ]

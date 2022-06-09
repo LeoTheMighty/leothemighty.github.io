@@ -4,8 +4,10 @@ import test from '../images/test.jpg';
 import { newTab } from '../helper';
 import links from '../links';
 import SpotifyIconViewer from './spotify/SpotifyIconViewer';
+import { SpotifyItemType } from './spotify/types';
 
-const NUM_ALBUMS_FETCH = 2;
+const STARTING_NUMBER = 15;
+const NUM_ALBUMS_FETCH = 5;
 
 type Album = {
   name: string;
@@ -97,9 +99,10 @@ I am not currently thinking about backends as I will not spend money until I get
  * Fetch the next albums to show.
  *
  * @param index
+ * @param fetch
  */
-const getNextAlbums = (index: number):  Album[] => {
-  return albums.slice(index, index + NUM_ALBUMS_FETCH);
+const getNextAlbums = (index: number, fetch: number = NUM_ALBUMS_FETCH):  Album[] => {
+  return albums.slice(index, index + fetch);
 };
 
 const getAlbumComponents = (albums: Album[]): JSX.Element[] => {
@@ -122,13 +125,17 @@ const getAlbumComponents = (albums: Album[]): JSX.Element[] => {
 const Spotify = () => {
   const [albums, setAlbums] = useState<Album[]>([]);
   const [viewType, setViewType] = useState<"icon" | "list">("icon");
+  const [itemType, setItemType] = useState<SpotifyItemType>("album");
 
   const [albumComps, setAlbumComps] = useState<JSX.Element[]>([]);
 
-  const loadMore = () => setAlbumComps(c => c.concat(getAlbumComponents(getNextAlbums(c.length))));
+  // const loadMore = () => setAlbumComps(c => c.concat(getAlbumComponents(getNextAlbums(c.length))));
+  const loadMore = () => setAlbums(c => c.concat(getNextAlbums(c.length)));
 
   // initial
-  useEffect(loadMore, []);
+  useEffect(() => {
+    setAlbums(c => c.concat(getNextAlbums(c.length, STARTING_NUMBER)));
+  }, []);
 
   return (
     <div className="spotify">
@@ -137,16 +144,20 @@ const Spotify = () => {
 
         </div>
         <h2 className="above">
-          My Favorite Albums
+          My Favorite
+
+          <button onClick={() => alert('hey')}>
+            Albums <i className="bi-chevron-down" />
+          </button>
         </h2>
         <div>
 
         </div>
       </header>
-      <div className="albums">
-      <SpotifyIconViewer type="album" items={} />
-        { albumComps }
-      </div>
+      <SpotifyIconViewer type={itemType} items={albums} />
+      {/*<div className="albums">*/}
+        {/*{ albumComps }*/}
+      {/*</div>*/}
       <div>
         <button // TODO: THIS LOOKS TRASH
           type="button"

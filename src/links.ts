@@ -35,7 +35,7 @@ export default {
   github: 'https://github.com/LeoTheMighty',
   email: 'mailto:leonid@ac93.org',
   spotify: 'https://open.spotify.com/user/leothemighty123',
-  spotifyDeveloper: 'https://developer.spotify.com',
+  spotifyDeveloper: 'https://developer.spotify.com/documentation/web-api/reference/#/',
   joekt: 'https://joekt.dev/',
   me,
   profile,

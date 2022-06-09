@@ -21,6 +21,7 @@ const App = () => {
   const resumeRef = useRef<null | HTMLDivElement>(null);
   const profileRef = useRef<null | HTMLDivElement>(null);
   const aocRef = useRef<null | HTMLDivElement>(null);
+  const spotifyRef = useRef<null | HTMLDivElement>(null);
 
   const galleryVisible = useOnScreen(galleryRef);
 
@@ -37,6 +38,8 @@ const App = () => {
       ref = profileRef;
     } else if (dest === "aoc") {
       ref = aocRef;
+    } else if (dest === "music") {
+      ref = spotifyRef;
     }
 
     ref && ref.current && ref.current.scrollIntoView({ behavior: "smooth" });
@@ -91,8 +94,13 @@ const App = () => {
         <div className="d-flex justify-content-center separator">
           <a onClick={() => scrollTo('gallery')} className="col d-flex justify-content-center align-items-center"> Photos </a>
           <a onClick={() => scrollTo('resume')} className="col d-flex justify-content-center align-items-center"> Resume </a>
+          <a onClick={() => scrollTo('music')} className="col d-flex justify-content-center align-items-center"> Music </a>
           <a onClick={() => scrollTo('projects')} className="col d-flex justify-content-center align-items-center"> Projects </a>
-          <a href={links.source} {...newTab} className="col d-flex justify-content-center align-items-center"> Source </a>
+        </div>
+        <div className="d-flex justify-content-center separator">
+          <a href={links.source} {...newTab} className="col d-flex justify-content-center align-items-center font-ter">
+            View my project source on Github
+          </a>
         </div>
         <div className="separator" />
         <Profile />
@@ -104,9 +112,10 @@ const App = () => {
         <header ref={galleryRef}> <h2 className="above"> My Pacific Crest Trail Journey </h2> </header>
         <Gallery visible={galleryVisible}/>
         <br />
-        <Spotify />
+        <div ref={spotifyRef}>
+          <Spotify />
+        </div>
         <br />
-        {/*<header className="above" ref={projectsRef}> <h2> Projects </h2> </header>*/}
         <div ref={projectsRef} />
         <Projects />
 

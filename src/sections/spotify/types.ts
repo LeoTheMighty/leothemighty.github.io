@@ -4,6 +4,8 @@ export interface SpotifyItem {
   url: string;
 }
 
+export type SpotifyItemType = "album" | "song" | "artist" | "playlist" | "just_good_playlist";
+
 export interface Album extends SpotifyItem {
   artist: string;
 }

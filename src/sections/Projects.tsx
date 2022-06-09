@@ -5,7 +5,7 @@ import React from 'react';
 
 const Projects = () => (
   <>
-    < Project
+    <Project
       title="CS4300: Computer Graphics "
       subtitle={<i> Created in Collaboration with <a href={links.joekt} {...newTab}>
         Joseph Kaming-Thanassi
