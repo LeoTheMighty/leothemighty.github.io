@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b219211a.css",
-    "main.js": "/static/js/main.135b9861.js",
+    "main.css": "/static/css/main.391dbbf2.css",
+    "main.js": "/static/js/main.c4bae6dd.js",
     "static/js/787.cc967175.chunk.js": "/static/js/787.cc967175.chunk.js",
     "static/media/67.jpg": "/static/media/67.254b2f996c5c0e41e169.jpg",
     "static/media/129.jpg": "/static/media/129.2d7b91fb0f7bfc5dd638.jpg",
@@ -50,6 +50,7 @@
     "static/media/177.jpg": "/static/media/177.f0d843efe42f02969229.jpg",
     "static/media/29.jpg": "/static/media/29.bf5fb5971dd281354d25.jpg",
     "static/media/45.jpg": "/static/media/45.971621fad840a819c123.jpg",
+    "static/media/spotifleopreview.png": "/static/media/spotifleopreview.9248074e48fa0a2104b0.png",
     "static/media/89.jpg": "/static/media/89.5a4ba4ec49ea772c87ca.jpg",
     "static/media/103.jpg": "/static/media/103.2e9669799409d9c22f20.jpg",
     "static/media/105.jpg": "/static/media/105.1e5967a0eb5820cd595f.jpg",
@@ -196,12 +197,12 @@
     "static/media/cs4300preview.png": "/static/media/cs4300preview.e2e2e6f0187ef668585a.png",
     "static/media/resume.pdf": "/static/media/resume.994e371f3b3e18183265.pdf",
     "index.html": "/index.html",
-    "main.b219211a.css.map": "/static/css/main.b219211a.css.map",
-    "main.135b9861.js.map": "/static/js/main.135b9861.js.map",
+    "main.391dbbf2.css.map": "/static/css/main.391dbbf2.css.map",
+    "main.c4bae6dd.js.map": "/static/js/main.c4bae6dd.js.map",
     "787.cc967175.chunk.js.map": "/static/js/787.cc967175.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b219211a.css",
-    "static/js/main.135b9861.js"
+    "static/css/main.391dbbf2.css",
+    "static/js/main.c4bae6dd.js"
   ]
 }
