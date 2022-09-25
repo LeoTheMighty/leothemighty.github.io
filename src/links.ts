@@ -1,12 +1,18 @@
 import Resume from './files/resume.pdf';
 import CS4300Preview from './images/cs4300preview.png';
 import pillarsPreview from './images/pillarspreview.png';
+import spotifleoPreview from './images/spotifleopreview.png';
 import homePreview from './images/homepreview.png';
 import me from './images/me.png';
 import profile from './images/profilecover.png';
 
 export default {
   projects: {
+    spotifleo: {
+      site: 'https://leothemighty.github.io/spotifleo',
+      source: 'https://github.com/LeoTheMighty/spotfleo',
+      preview: spotifleoPreview,
+    },
     cs4300: {
       preview: CS4300Preview,
       assignments: [

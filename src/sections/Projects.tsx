@@ -6,6 +6,22 @@ import React from 'react';
 const Projects = () => (
   <>
     <Project
+      title="Spotify Deep Diver"
+      subtitle="An app to help listen to an Artist's entire discography"
+      link={links.projects.spotifleo.source}
+      preview={links.projects.spotifleo.preview}
+      previewAlt="Leo's Spotify Deep Diver App"
+      previewSubtitle="Optimized to look the best on mobile, add it to your device's home-screen to view this way."
+    >
+      <ul>
+        <li> Started when I went on manual deep dives, going through an entire artist's discography and making a "Just Good" playlist </li>
+        <li> This app creates a "Deep Dive" playlist out of all of an artist's Albums, Singles, and <b>Features</b> as well. </li>
+        <li> It also helps you play through the deep dive list, marking them as Good, and also provides the capability to toggle the Track in your favorite playlists along the way.</li>
+        <li> It is an entirely front-end app, utilizing the Spotify API to perform all of the actions and doing heavy caching on LocalStorage. </li>
+        <li> This is my best front-end project to date: Spending countless hours on layouts, custom reactive components, and even CSS animations. </li>
+      </ul>
+    </Project>
+    <Project
       title="CS4300: Computer Graphics "
       subtitle={<i> Created in Collaboration with <a href={links.joekt} {...newTab}>
         Joseph Kaming-Thanassi
